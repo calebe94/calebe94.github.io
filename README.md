@@ -1,172 +1,368 @@
-<div align="center">
-  <img alt="Astro Cactus logo" src="https://github.com/chrismwilliams/astro-theme-cactus/assets/12715988/85aa0d3c-ef6a-44e2-954d-ef035b4f4315" width="70" />
-</div>
-<h1 align="center">
-  Astro Cactus
-</h1>
+# Calebe94's Blog
 
-Astro Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+A digital garden and blog built with [Quartz 4](https://quartz.jzhao.xyz/) - a fast, batteries-included static site generator designed for networked thought.
 
 ## Table Of Contents
 
 1. [Key Features](#key-features)
-2. [Demo](#demo-💻)
-3. [Quick start](#quick-start)
-4. [Preview](#preview)
-5. [Commands](#commands)
-6. [Configure](#configure)
-7. [Updating](#updating)
-8. [Adding Posts](#adding-posts)
+2. [Demo](#demo)
+3. [Quick Start](#quick-start)
+4. [Commands](#commands)
+5. [Configure](#configure)
+6. [Adding Content](#adding-content)
    - [Frontmatter](#frontmatter)
-   - [Frontmatter Snippet](#frontmatter-snippet)
-9. [Pagefind search](#pagefind-search)
-10. [Analytics](#analytics)
-11. [Deploy](#deploy)
-12. [Acknowledgment](#acknowledgment)
+   - [Content Structure](#content-structure)
+7. [Development](#development)
+8. [Deploy](#deploy)
 
 ## Key Features
 
-- Astro v5 Fast 🚀
-- TailwindCSS Utility classes
-- Accessible, semantic HTML markup
-- Responsive & SEO-friendly
-- Dark / Light mode, using Tailwind and CSS variables
-- MD & [MDX](https://docs.astro.build/en/guides/markdown-content/#mdx-only-features) posts & notes
-  - Includes [Admonitions](https://astro-cactus.chriswilliams.dev/posts/markdown-elements/admonistions/)
-- [Satori](https://github.com/vercel/satori) for creating open graph png images
-- [Automatic RSS feed](https://docs.astro.build/en/guides/rss)
-- [Webmentions](https://webmention.io/)
-- Auto-generated:
-  - [sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
-  - [robots.txt](https://github.com/alextim/astro-lib/blob/main/packages/astro-robots-txt/README.md)
-  - [web app manifest](https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md)
-- [Pagefind](https://pagefind.app/) static search library integration
-- [Astro Icon](https://github.com/natemoo-re/astro-icon) svg icon component
-- [Expressive Code](https://expressive-code.com/) code blocks and syntax highlighter
+- ⚡ **Fast** - Built with Quartz 4 for incredibly fast page loads and tiny bundle sizes
+- 🌙 **Dark / Light mode** - Automatic theme switching with CSS variables
+- 🔍 **Full-text search** - Powered by FlexSearch for instant content discovery
+- 🔗 **Graph view** - Visual representation of connections between your notes
+- 📝 **Markdown support** - GitHub Flavored Markdown + Obsidian Flavored Markdown
+- 🏷️ **Syntax highlighting** - Powered by Shiki with beautiful themes
+- 📱 **Responsive** - Mobile-first design that works on all devices
+- 🌐 **SEO-friendly** - Automatic sitemaps, RSS feeds, and meta tags
+- 📄 **Tag and Folder listings** - Auto-generated pages for organizing content
+- 🔙 **Backlinks** - See which pages link to each other
 
-## Demo 💻
+## Demo
 
-Check out the [Demo](https://astro-cactus.chriswilliams.dev/), hosted on Netlify
+Visit the live site at [blog.calebe.dev.br](https://blog.calebe.dev.br)
 
-## Quick start
-
-[Create a new repo](https://github.com/chrismwilliams/astro-theme-cactus/generate) from this template.
+## Quick Start
 
 ```bash
-# npm 7+
-npm create astro@latest -- --template chrismwilliams/astro-theme-cactus
+# Clone the repository
+git clone https://github.com/Calebe94/blog.git
+cd blog
 
-# pnpm
-pnpm dlx create-astro --template chrismwilliams/astro-theme-cactus
+# Install dependencies (requires Node 22+)
+npm install
+
+# Start development server
+npm run serve
+
+# Build for production
+npm run build
 ```
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrismwilliams/astro-theme-cactus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchrismwilliams%2Fastro-theme-cactus&project-name=astro-theme-cactus)
+### Requirements
 
-## Preview
-
-![Astro Theme Cactus in a light theme mode](https://github.com/chrismwilliams/astro-theme-cactus/assets/12715988/84c89d42-4525-4674-b10c-6d6ebdc06382)
-
-![Astro Theme Cactus in a dark theme mode](https://github.com/chrismwilliams/astro-theme-cactus/assets/12715988/e0e575e2-445f-4c2d-a812-b5b53d2d9031)
+- **Node.js**: v22 or higher
+- **npm**: v10.9.2 or higher
 
 ## Commands
 
-Replace pnpm with your choice of npm / yarn
-
-| Command          | Action                                                         |
+| Command | Action |
 | :--------------- | :------------------------------------------------------------- |
-| `pnpm install`   | Installs dependencies                                          |
-| `pnpm dev`       | Starts local dev server at `localhost:3000`                    |
-| `pnpm build`     | Build your production site to `./dist/`                        |
-| `pnpm postbuild` | Pagefind script to build the static search of your blog posts  |
-| `pnpm preview`   | Preview your build locally, before deploying                   |
-| `pnpm sync`      | Generate types based on your config in `src/content/config.ts` |
+| `npm install` | Install dependencies |
+| `npm run build` | Build your production site to `./public/` |
+| `npm run serve` | Build and start local dev server at `http://localhost:8080` |
+| `npm run check` | Type check and lint with Prettier |
+| `npm run format` | Format all files with Prettier |
 
 ## Configure
 
-- Edit the config file `src/site.config.ts` for basic site meta data
-- Update file `astro.config.ts`
-  - **Important**: the site property with your own domain.
-  - [astro-webmanifest options](https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md)
-- Replace & update files within the `/public` folder:
-  - icon.svg - used as the source to create favicons & manifest icons
-  - social-card.png - used as the default og:image
-- Modify file `src/styles/global.css` with your own light and dark styles.
-  - You can also modify the theme(s) for markdown code blocks generated by [Expressive Code](https://expressive-code.com). Astro Cactus has both a dark (dracula) and light (github-light) theme, which can be found in `src/site.config.ts`. You can find more theme(s) and options [here](https://expressive-code.com/guides/themes/#available-themes).
-- Edit social links in `src/components/SocialList.astro` to add/replace your media profile. Icons can be found @ [icones.js.org](https://icones.js.org/), per [Astro Icon's instructions](https://www.astroicon.dev/guides/customization/#find-an-icon-set).
-- Create/edit posts & notes for your blog within `src/content/post/` & `src/content/note/` with .md/mdx file(s). See [below](#adding-posts-and-notes) for more details.
-  - Read [this post](http://astro-cactus.chriswilliams.dev/posts/webmentions/) for adding webmentions to your site.
-- OG Image:
-  - If you would like to change the style of the generated image the Satori library creates, open up `src/pages/og-image/[slug].png.ts` to the markup function where you can edit the html/tailwind-classes as necessary. You can use this [playground](https://og-playground.vercel.app/) to aid your design.
-  - You can also create your own og images and skip satori generating it for you by adding an ogImage property in the frontmatter with a link to the asset, an example can be found in `src/content/post/social-image.md`. More info on frontmatter can be found [here](#frontmatter)
-- Optional:
-  - Fonts: This theme sets the body element to the font family `font-mono`, located in the global css file `src/styles/global.css`. You can change fonts by removing the variant `font-mono`, after which TailwindCSS will default to the `font-sans` [font family stack](https://tailwindcss.com/docs/font-family).
+Quartz configuration is split between two main files:
 
-## Updating
+### `quartz.config.ts`
 
-If you've forked the template, you can [sync the fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) with your own project, remembering to **not** click Discard Changes as you will lose your own.
+Edit this file for global site settings:
 
-If you have a template repository, you can add this template as a remote, as discussed [here](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository).
+- `pageTitle`: Title of your site (e.g., "Calebe94")
+- `pageTitleSuffix`: String added to end of page titles
+- `baseUrl`: Your deployed URL (e.g., "blog.calebe.dev.br")
+- `enableSPA`: Enable/disable SPA routing
+- `enablePopovers`: Enable/disable link previews
+- `locale`: Used for i18n and date formatting (e.g., "en-GB")
+- `ignorePatterns`: Glob patterns to ignore (e.g., ["private", "templates"])
+- `theme`: Configure colors and fonts
+  - `typography`: Font choices (Google Fonts)
+  - `colors`: Light and dark mode color palettes
 
-## Adding posts and notes
+### `quartz.layout.ts`
 
-This theme utilises [Content Collections](https://docs.astro.build/en/guides/content-collections/) to organise local Markdown and MDX files, as well as type-checking frontmatter with a schema -> `src/content/config.ts`.
+Edit this file to customize page layout:
 
-Adding a post/note is as simple as adding your .md(x) files to the `src/content/post` and/or `src/content/note` folder, the filename of which will be used as the slug/url. The posts included with this template are there as an example of how to structure your frontmatter. Additionally, the [Astro docs](https://docs.astro.build/en/guides/markdown-content/) has a detailed section on markdown pages.
+Components can be placed in these sections:
+- `head`: Metadata and scripts
+- `header`: Top horizontal bar
+- `beforeBody`: Content above main body (breadcrumbs, title, tags)
+- `left`: Left sidebar (explorer, search)
+- `right`: Right sidebar (graph, TOC, backlinks)
+- `afterBody`: Content below main body
+- `footer`: Bottom of page
 
-### Post Frontmatter
+### Static Assets
 
-| Property (\* required) | Description                                                                                                                                                                                                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| title \*               | Self explanatory. Used as the text link to the post, the h1 on the posts' page, and the pages title property. Has a max length of 60 chars, set in `src/content/config.ts`                                                                                                                                   |
-| description \*         | Similar to above, used as the seo description property. Has a min length of 50 and a max length of 160 chars, set in the post schema.                                                                                                                                                                        |
-| publishDate \*         | Again pretty simple. To change the date format/locale, currently **en-GB**, update the date option in `src/site.config.ts`. Note you can also pass additional options to the component `<FormattedDate>` if required.                                                                                        |
-| updatedDate            | This is an optional date representing when a post has been updated, in the same format as the publishDate.                                                                                                                                                                                                   |
-| tags                   | Tags are optional with any created post. Any new tag(s) will be shown in `yourdomain.com/posts` & `yourdomain.com/tags`, and generate the page(s) `yourdomain.com/tags/[yourTag]`                                                                                                                            |
-| coverImage             | This is an optional object that will add a cover image to the top of a post. Include both a `src`: "_path-to-image_" and `alt`: "_image alt_". You can view an example in `src/content/post/cover-image.md`.                                                                                                 |
-| ogImage                | This is an optional property. An OG Image will be generated automatically for every post where this property **isn't** provided. If you would like to create your own for a specific post, include this property and a link to your image, the theme will then skip automatically generating one.            |
-| draft                  | This is an optional property as it is set to false by default in the schema. By adding true, the post will be filtered out of the production build in a number of places, inc. getAllPosts() calls, og-images, rss feeds, and generated page[s]. You can view an example in `src/content/post/draft-post.md` |
+Place static files in the `quartz/static/` folder:
+- Images, fonts, and other assets are automatically copied to `public/static/`
+- Example: `quartz/static/icon.svg` → `/static/icon.svg`
 
-### Note Frontmatter
+## Adding Content
 
-| Property (\* required) | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| title \*               | string, max length 60 chars.                       |
-| description            | to be used for the head meta description property. |
-| publishDate \*         | ISO 8601 format with offsets allowed.              |
+All content should go in the `/content` folder. The homepage lives at `content/index.md`.
 
-### Frontmatter snippets
+### Content Structure
 
-Astro Cactus includes a helpful VSCode snippet which creates a frontmatter 'stub' for posts and note's, found here -> `.vscode/post.code-snippets`. Start typing the word `frontmatter` on your newly created .md(x) file to trigger it. Visual Studio Code snippets appear in IntelliSense via (⌃Space) on mac, (Ctrl+Space) on windows.
+```
+content/
+├── index.md              # Homepage
+├── posts/               # Blog posts
+│   ├── post-1.md
+│   └── post-2.md
+├── notes/               # Shorter notes
+│   ├── note-1.md
+│   └── note-2.md
+└── uses/                # Uses / equipment page
+    └── uses.md
+```
 
-## Pagefind search
+### Frontmatter
 
-This integration brings a static search feature for searching blog posts and notes. In its current form, pagefind only works once the site has been built. This theme adds a postbuild script that should be run after Astro has built the site. You can preview locally by running both build && postbuild.
+Quartz supports the following frontmatter fields:
 
-Search results only includes pages from posts and notes. If you would like to include other/all your pages, remove/re-locate the attribute `data-pagefind-body` to the article tag found in `src/layouts/BlogPost.astro` and `src/components/note/Note.astro`.
+| Property | Description |
+|-----------|-------------|
+| `title` | Page title (defaults to filename) |
+| `description` | SEO description for link previews |
+| `date` | Publication date (ISO 8601 or string format) |
+| `tags` | Array of tags (e.g., `["javascript", "web"]) |
+| `aliases` | Alternative names for this note |
+| `draft` | Boolean to hide page from production builds |
+| `socialImage` | Custom image for OpenGraph/Twitter cards |
+| `enableToc` | Boolean to enable/disable Table of Contents |
+| `cssclasses` | Custom CSS classes for the page body |
+| `lang` | Page language (overrides site default) |
 
-It also allows you to filter posts by tags added in the frontmatter of blog posts. If you would rather remove this, remove the data attribute `data-pagefind-filter="tag"` from the link in `src/components/blog/Masthead.astro`.
+**Example:**
 
-If you would rather not include this integration, simply remove the component `src/components/Search.astro`, and uninstall both `@pagefind/default-ui` & `pagefind` from package.json. You will also need to remove the postbuild script from here as well.
+```markdown
+---
+title: "My Post Title"
+description: "A brief description of this post"
+date: 2024-01-15
+tags:
+  - javascript
+  - web-development
+draft: false
+---
 
-You can reduce the initial css payload of your css, as demonstrated [here](https://github.com/chrismwilliams/astro-theme-cactus/pull/145#issue-1943779868), by lazy loading the web components styles.
+# My Post Title
 
-## Analytics
+Content goes here...
+```
 
-You may want to track the number of visitors you receive to your blog/website in order to understand trends and popular posts/pages you've created. There are a number of providers out there one could use, including web hosts such as [vercel](https://vercel.com/analytics), [netlify](https://www.netlify.com/products/analytics/), and [cloudflare](https://www.cloudflare.com/web-analytics/).
+### Markdown Syntax
 
-This theme/template doesn't include a specific solution due to there being a number of use cases and/or options which some people may or may not use.
+Quartz supports:
 
-You may be asked to included a snippet inside the **HEAD** tag of your website when setting it up, which can be found in `src/layouts/Base.astro`. Alternatively, you can add the snippet in `src/components/BaseHead.astro`.
+- **GitHub Flavored Markdown** - Tables, footnotes, strikethrough, task lists
+- **Obsidian Flavored Markdown** - Wikilinks `[[link]]`, callouts `> [!info]`, embeds
+- **Syntax highlighting** - Automatic with Shiki
+- **Math/Latex** - KaTeX or MathJax support
+- **Diagrams** - Mermaid diagram support
+
+## Development
+
+### Local Development
+
+Start the development server with hot-reload:
+
+```bash
+npm run serve
+```
+
+This builds your site and starts a server at `http://localhost:8080`.
+
+### Type Checking & Linting
+
+```bash
+npm run check
+```
+
+This runs TypeScript compiler and Prettier checks.
+
+### Formatting
+
+```bash
+npm run format
+```
+
+This formats all files with Prettier.
 
 ## Deploy
 
-[Astro docs](https://docs.astro.build/en/guides/deploy/) has a great section and breakdown of how to deploy your own Astro site on various platforms and their idiosyncrasies.
+This blog is deployed to GitHub Pages via GitHub Actions.
 
-By default the site will be built (see [Commands](#commands) section above) to a `/dist` directory.
+### GitHub Actions
+
+The workflow is defined in `.github/workflows/deploy.yml`:
+
+1. **Build job**:
+   - Checks out code
+   - Sets up Node.js v22
+   - Installs dependencies with npm
+   - Builds the site: `npm run build`
+   - Uploads `public/` as artifact
+
+2. **Deploy job**:
+   - Deploys the artifact to GitHub Pages
+
+### Manual Deployment
+
+You can also build and deploy manually:
+
+```bash
+# Build the site
+npm run build
+
+# The output will be in the `public/` directory
+# Upload the contents of `public/` to your hosting provider
+```
+
+### GitHub Pages Settings
+
+Ensure your repository settings are configured:
+
+1. Go to **Settings** > **Pages**
+2. **Source**: Deploy from a branch
+3. **Branch**: `quartz`
+4. **Folder**: `/ (root) or `public/`
+
+### Other Platforms
+
+Quartz can be deployed to any static hosting:
+
+- **Netlify**: Build command: `npm run build`, Publish directory: `public`
+- **Vercel**: Build command: `npm run build`, Output directory: `public`
+- **Cloudflare Pages**: Build command: `npm run build`, Output directory: `public`
+- **GitHub Pages**: As described above
+
+## Customization
+
+### Theme Colors
+
+Edit `theme.colors` in `quartz.config.ts` to customize colors:
+
+```typescript
+theme: {
+  colors: {
+    lightMode: {
+      light: "#faf8f8",      // Background
+      lightgray: "#e5e5e5", // Borders
+      gray: "#b8b8b8",         // Graph links
+      darkgray: "#4e4e4e",    // Body text
+      dark: "#2b2b2b",        // Headers
+      secondary: "#284b63",    // Links
+      tertiary: "#84a59d",     // Visited links
+      highlight: "rgba(143, 159, 169, 0.15)", // Highlighted text
+      textHighlight: "#fff23688", // Markdown highlight
+    },
+    darkMode: {
+      // ... similar structure for dark mode
+    },
+  },
+}
+```
+
+### Typography
+
+Use any Google Font by specifying in `theme.typography`:
+
+```typescript
+theme: {
+  typography: {
+    header: "Schibsted Grotesk",
+    body: "Source Sans Pro",
+    code: "IBM Plex Mono",
+  },
+}
+```
+
+### Plugins
+
+Quartz uses a plugin system for transformers, filters, and emitters.
+
+**Common plugins in `quartz.config.ts`:**
+
+- `Plugin.FrontMatter()` - Parse frontmatter
+- `Plugin.SyntaxHighlighting()` - Code highlighting
+- `Plugin.GitHubFlavoredMarkdown()` - GFM support
+- `Plugin.ObsidianFlavoredMarkdown()` - Wikilinks, callouts
+- `Plugin.TableOfContents()` - Auto-generate TOC
+- `Plugin.ContentPage()` - Generate content pages
+- `Plugin.TagPage()` - Generate tag listing pages
+- `Plugin.FolderPage()` - Generate folder listing pages
+- `Plugin.Assets()` - Copy static assets
+- `Plugin.Static()` - Copy additional static files
+- `Plugin.Favicon()` - Generate favicons
+
+### Components
+
+Create custom components in `quartz/components/` and add them to `quartz.layout.ts`.
+
+See the [Quartz documentation](https://quartz.jzhao.xyz/advanced/creating-components) for details.
+
+## Migration from Astro
+
+This blog was migrated from [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus) to Quartz 4.
+
+### Key Changes:
+
+| Aspect | Astro Cactus | Quartz 4 |
+|--------|--------------|-----------|
+| Framework | Astro v5 | Quartz 4.5.2 |
+| Content folder | `src/content/` | `content/` |
+| Date field | `publishDate` | `date` |
+| Build output | `dist/` | `public/` |
+| Components | `.astro` files | JSX/TSX components |
+| Build command | `pnpm build` | `npm run build` |
+| Node version | v20 | v22 |
+| Package manager | pnpm | npm |
+
+### Assets
+
+All assets (fonts, images, game files) are now in `quartz/static/`:
+
+- Fonts: `/static/fonts/`
+- Tetris game: `/static/tetris.wasm`, `/static/tetris.js`, `/static/tetris.data`
+- Icons: `/static/icon.svg`, `/static/icon1.svg`
+
+## Troubleshooting
+
+### Build Fails
+
+If the build fails, check:
+
+1. Node.js version is v22 or higher: `node --version`
+2. npm version is v10.9.2 or higher: `npm --version`
+3. Dependencies are installed: `npm install`
+4. Run type check: `npm run check`
+
+### Content Not Appearing
+
+If content doesn't appear:
+
+1. Check file is in `content/` folder
+2. Check frontmatter is valid YAML
+3. Check `draft: false` is set (or omit draft field)
+4. Check file isn't in `ignorePatterns` in config
+
+### Search Not Working
+
+If search doesn't find content:
+
+1. Ensure build completed successfully
+2. Check browser console for errors
+3. Verify `index.html` is loading correctly
 
 ## Acknowledgment
 
-This theme was inspired by [Hexo Theme Cactus](https://github.com/probberechts/hexo-theme-cactus)
+This blog uses [Quartz](https://github.com/jackyzha0/quartz), an amazing static site generator by [jackyzha0](https://github.com/jackyzha0).
 
 ## License
 
