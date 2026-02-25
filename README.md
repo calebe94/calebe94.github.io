@@ -60,7 +60,7 @@ npm run build
 | :--------------- | :------------------------------------------------------------- |
 | `npm install` | Install dependencies |
 | `npm run build` | Build your production site to `./public/` |
-| `npm run serve` | Build and start local dev server at `http://localhost:8080` |
+| `npm run serve` | Build and start local dev server at `http://localhost:3000` |
 | `npm run check` | Type check and lint with Prettier |
 | `npm run format` | Format all files with Prettier |
 
@@ -176,7 +176,7 @@ Start the development server with hot-reload:
 npm run serve
 ```
 
-This builds your site and starts a server at `http://localhost:8080`.
+This builds your site and starts a server at `http://localhost:3000`.
 
 ### Type Checking & Linting
 
