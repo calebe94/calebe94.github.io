@@ -59,9 +59,6 @@ html {
 body {
   font-family: "Courier New", "Courier Prime", monospace;
   line-height: 1.45;
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 0.25rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -238,18 +235,6 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-// ---------------------------------------------------------------------------
-// Page layout overrides — narrower content area
-// ---------------------------------------------------------------------------
-.page {
-  max-width: 60rem;
-}
-
-// Center column should be narrower to match the 48rem max-width feel
-.page > #quartz-body > .center {
-  max-width: 48rem;
 }
 
 // ---------------------------------------------------------------------------
