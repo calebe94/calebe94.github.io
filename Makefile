@@ -8,7 +8,7 @@ install:
 	@npm install
 
 start:
-	@npm run dev
+	@npm run serve
 
 build:
 	@npm run build
