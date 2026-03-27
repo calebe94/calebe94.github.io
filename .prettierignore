@@ -4,5 +4,4 @@ node_modules
 # cache-dirs
 **/.cache
 
-pnpm-lock.yaml
-dist
+public
