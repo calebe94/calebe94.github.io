@@ -17,7 +17,7 @@ import {
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { FolderContent } from "../../components"
 import { write } from "./helpers"
-import { i18n, TRANSLATIONS } from "../../i18n"
+import { TRANSLATIONS } from "../../i18n"
 import { BuildCtx } from "../../util/ctx"
 import { StaticResources } from "../../util/resources"
 interface FolderPageOptions extends FullPageLayout {
@@ -62,7 +62,7 @@ async function* processFolderInfo(
 function computeFolderInfo(
   folders: Set<SimpleSlug>,
   content: ProcessedContent[],
-  locale: keyof typeof TRANSLATIONS,
+  _locale: keyof typeof TRANSLATIONS,
 ): Record<SimpleSlug, ProcessedContent> {
   // Create default folder descriptions
   const folderInfo: Record<SimpleSlug, ProcessedContent> = Object.fromEntries(
@@ -71,7 +71,7 @@ function computeFolderInfo(
       defaultProcessedContent({
         slug: joinSegments(folder, "index") as FullSlug,
         frontmatter: {
-          title: `${i18n(locale).pages.folderContent.folder}: ${folder}`,
+          title: folder.charAt(0).toUpperCase() + folder.slice(1),
           tags: [],
         },
       }),
