@@ -1,0 +1,33 @@
+.langtoggle {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  width: auto;
+  height: 32px;
+  margin: 0;
+  text-align: inherit;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & .langtoggle-flag {
+    font-size: 18px;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  & .langtoggle-label {
+    font-size: 0.8rem;
+    color: var(--darkgray);
+    white-space: nowrap;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .langtoggle .langtoggle-label {
+    display: none;
+  }
+}
