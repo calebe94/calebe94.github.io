@@ -474,6 +474,8 @@ Animação que simula digitação caractere por caractere
 ### dmenu
 Menu dinâmico do projeto suckless para X11 — base de várias ferramentas
 
+> Este glossário é atualizado conforme novos posts são publicados. Se você achar que algum termo está faltando, me avise.
+
 ---
 
 > Este glossário é atualizado conforme novos posts são publicados. Se você achar que algum termo está faltando, me avise.
