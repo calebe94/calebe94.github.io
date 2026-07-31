@@ -47,10 +47,11 @@ All content lives in the `content/` directory as Markdown files:
 
 ```
 content/
-├── index.md       # Homepage
-├── posts/         # Blog posts (articles, tutorials)
-├── notes/         # Short notes
-└── uses/          # Tools and tech I use
+├── index.md          # Homepage
+├── posts/            # Blog posts (articles, tutorials)
+├── notes/            # Short notes (includes glossario.md)
+├── uses/             # Tools and tech I use
+└── templates/        # Post templates (ignored by Quartz build)
 ```
 
 Posts use YAML frontmatter for metadata:
@@ -66,6 +67,26 @@ tags:
 draft: false
 ---
 ```
+
+## Glossary Linking Convention
+
+A technical glossary lives at [`content/notes/glossario.md`](content/notes/glossario.md), published at [`/notes/glossario`](https://blog.calebe.dev.br/notes/glossario).
+
+**All blog posts must link technical terms to the glossary.** When a post introduces a term that exists in the glossary, link to it on first mention:
+
+```markdown
+The [Plexi](/notes/glossario#Plexi) is a valve amp from the 60s...
+```
+
+Or use Quartz wikilinks (resolved via `shortest` link resolution):
+
+```markdown
+The [[notes/glossario#Plexi|Plexi]] is a valve amp...
+```
+
+For terms not yet in the glossary, add them to `content/notes/glossario.md` first, then link from the post.
+
+A post template with this convention pre-filled is at [`content/templates/new-post.md`](content/templates/new-post.md). The `templates/` directory is in Quartz's `ignorePatterns` so it won't render as a page — it's a reference for writers only.
 
 ## Configuration
 
