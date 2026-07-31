@@ -141,8 +141,8 @@ Mosrite Kamming          Zuko (este pedal)         Tank G (IR loader)
 │  pickup     │  TS 1/4"│  J201        │  patch │  Greenback   │──→ Amp
 │             │         │              │        │              │──→ USB
 └─────────────┘         │  2 canais    │        └──────────────┘
-                       │  FMV + Pres  │
-                       └──────────────┘
+                        │  FMV + Pres  │
+                        └──────────────┘
 ```
 
 O signal chain fica assim:
@@ -153,7 +153,7 @@ Mosrite → Zuko (preamp) → Tank G (IR 1960A) → Fones/Amp
 
 O preamp JFET faz a saturação analógica orgânica. A Tank G aplica a resposta do gabinete 4x12 via convolução digital (multiplicação matemática dos espectros do sinal e do IR). O resultado soa como um Marshall Plexi completo, não como um pedal buzzy.
 
-O IR que eu pretendo comprar é o [Marsh 196A da 3 Sigma Audio](https://www.3sigmaaudio.com/marshall/), que custa US$10 (uns R$50) e tem várias posições de microfone. É o gabinete exato do Johnny Ramone.
+O IR que eu pretendo comprar é o [Marsh 196A da 3 Sigma Audio](https://www.3sigmaaudio.com/marshall/), que custa US\$10 (uns R\$50) e tem várias posições de microfone. É o gabinete exato do Johnny Ramone.
 
 ## O pedal
 
@@ -185,7 +185,7 @@ O IR que eu pretendo comprar é o [Marsh 196A da 3 Sigma Audio](https://www.3sig
 │  │ FS1  │  │ FS2 │  │ FS3  │                 │
 │  │Bypass│  │1976/│  │Boost │                 │
 │  │      │  │1984 │  │      │                 │
-│  └──🟢──┘  └──🟡──┘  └──🔴──┘                 │
+│  └──────┘  └─────┘  └──────┘                 │
 │                                              │
 │ Laterais: [IN TS 1/4"] 9V  ... [OUT TS 1/4"] │
 └──────────────────────────────────────────────┘
@@ -218,7 +218,7 @@ TS 1/4" (Tip-Sleeve de 1/4 de polegada, ou 6.35mm) é o conector padrão de guit
 
 ## Lista de materiais
 
-| Item | Qtd | Preço (R$) |
+| Item | Qtd | Preço (R\$) |
 |------|-----|------------|
 | JFET J201 | 3 | ~15 |
 | TL072 op-amp | 1 | ~3 |
@@ -234,27 +234,27 @@ TS 1/4" (Tip-Sleeve de 1/4 de polegada, ou 6.35mm) é o conector padrão de guit
 | Chapa alumínio 150×100×3mm | 1 | ~20 |
 | **Total** | | **~193** |
 
-R$193. Menos que um kit de teclado mecânico. Menos que um jogo de strings e um par de palhetas Dunlop Tortex.
+R\$193. Menos que um kit de teclado mecânico. Menos que um jogo de strings e um par de palhetas Dunlop Tortex.
 
 ## Diagrama de blocos do circuito
 
 ```mermaid
 graph LR
-    IN[Input TS 1/4] --> S1[Estágio 1\nJFET J201\nganho fixo]
-    S1 --> S2{Estágio 2\nJFET J201\nganho switchable}
+    IN[Input TS 1/4] --> S1[Estágio 1<br> JFET J201<br>ganho fixo]
+    S1 --> S2{Estágio 2<br>JFET J201<br>ganho switchable}
     S2 -->|1976: menos ganho| TS
     S2 -->|1984: mais ganho| TS
-    TS[Tone Stack FMV\nBass / Mid / Treble\n+ Presence] --> S3[Estágio 3\nmu-amp\npush-pull sim]
-    S3 --> VOL[Volume] --> OUT[Output TS 1/4\n→ Tank G]
+    TS[Tone Stack FMV<br>Bass / Mid / Treble<br>+ Presence] --> S3[Estágio 3<br>mu-amp<br>push-pull sim]
+    S3 --> VOL[Volume] --> OUT[Output TS 1/4<br>→ Tank G]
 
-    FS2[FS2\nChannel Switch] -.->|comuta ganho| S2
+    FS2[FS2<br>Channel Switch] -.->|comuta ganho| S2
 ```
 
 ```mermaid
 graph LR
-    FS1[FS1\nTrue Bypass] -.->|on/off do pedal| PEDAL[Zuko]
-    FS2[FS2\n1976 ↔ 1984] -.->|alterna canal| PEDAL
-    FS3[FS3\nBoost] -.->|ganho extra p/ solos| PEDAL
+    FS1[FS1<br>True Bypass] -.->|on/off do pedal| PEDAL[Zuko]
+    FS2[FS2<br>1976 ↔ 1984] -.->|alterna canal| PEDAL
+    FS3[FS3<br>Boost] -.->|ganho extra p/ solos| PEDAL
 ```
 
 O **mu-amp** no estágio 3 é uma configuração de 2 JFETs que emula o push-pull do power amp valvulado — aquele estágio final do amp que usa duas válvulas trabalhando em oposição (uma empurra enquanto a outra puxa) pra gerar potência e saturação. O Thor usa isso pra simular a saturação do power amp do Plexi, não só do preamp.
@@ -289,12 +289,12 @@ Se o som estiver bom, aí sim: soldar PCB, montar na chapa de alumínio, e pront
 O Zuko é só a Fase 1 de um projeto maior — o Vinyl Stem Remover.
 
 - **Fase 1 (agora):** Zuko + Tank G — pedal standalone
-- **Fase 2:** Comprar IR 3 Sigma Marsh 196A (US$10), carregar na Tank G
+- **Fase 2:** Comprar IR 3 Sigma Marsh 196A (US\$10), carregar na Tank G
 - **Fase 3:** Raspberry Pi 5 + Demucs (stem separation — remove guitarra do vinil)
 - **Fase 4:** Toca-discos + count-in "1-2-3-4!" do Dee Dee
 - **Fase 5:** Sistema completo all-in-one
 
-Mas por enquanto, é só o pedal. Um pedal de R$193 que soa como um Marshall de R$30.000.
+Mas por enquanto, é só o pedal. Um pedal de R\$193 que soa como um Marshall de R\$30.000.
 
 Gabba Gabba Hey!
 
