@@ -3,12 +3,10 @@ title: Teclado APPA
 description: Teclado mecânico com teclas ALPS inspirado no plaid
 date: '2023-02-23 16:00:00'
 tags:
-  - DIY
   - PT_BR
-  - Mechanical Keyboards
+  - DIY
   - keyboards
   - qmk
-  - appa
 ---
 
 # Teclado APPA

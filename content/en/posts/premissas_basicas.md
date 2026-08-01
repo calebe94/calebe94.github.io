@@ -4,6 +4,7 @@ description: ''
 date: '2021-04-17 18:04:26'
 tags:
   - EN_US
+  - suckless
 ---
 
 <main>
@@ -69,4 +70,10 @@ The fewer lines of code your code has, the more skilled you have become, and the
 [Unix Philosophy]: http://www.linfo.org/unix_philosophy.html
 [Suckless Philosophy]: https://suckless.org/philosophy/
 [TL:DR]: https://www.lifewire.com/what-is-tldr-2483633
+
+## See also
+
+- [[tinytoolsh-ferramentas-minuculas-para-produtividade|tinytoolsh]] — tiny tools for productivity
+- [[menos-e-mais-i18n-kiss]] — refactoring the blog i18n with KISS and Unix philosophy
+- [[glossary]] — terms like Suckless
 </main>

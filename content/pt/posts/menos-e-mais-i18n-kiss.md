@@ -4,9 +4,9 @@ description: "Troquei bandeirinhas por um ícone de globo, movi 28 arquivos de l
 date: "2026-08-01 00:00:00"
 tags:
   - PT_BR
+  - blog
   - suckless
-  - web
-  - quartz
+  - i18n
 ---
 
 # Menos é mais: refatorando o i18n do blog com KISS e filosofia Unix

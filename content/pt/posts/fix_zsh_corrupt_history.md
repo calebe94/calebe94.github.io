@@ -2,7 +2,9 @@
 title: Resolvendo historico corrompido do ZSH
 description: Como resolver o problema de historico corrompido do zsh
 date: '2021-04-17 18:04:26'
-tags: []
+tags:
+  - PT_BR
+  - shell
 ---
 
 ## Como resolver o problema de historico corrompido do zsh

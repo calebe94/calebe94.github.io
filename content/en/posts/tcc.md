@@ -4,12 +4,8 @@ description: >-
   Unveiling the Efficiency of Data Compression Techniques in IoT Devices
 date: '2023-09-05 11:00:00'
 tags:
-  - DIY
   - EN_US
-  - iot
-  - data
-  - compression
-  - final paper
+  - tcc
 ---
 
 # Unveiling the Efficiency of Data Compression Techniques in IoT Devices
@@ -67,3 +63,8 @@ Finally, I will present my TCC and defend it before an academic panel.
 # Conclusion
 
 This is the path I have traveled so far and what is yet to come in my TCC journey on data compression in IoT. This is an exciting and constantly evolving field, and I am eager to contribute new knowledge that can benefit the world of technology. Stay tuned for further updates as we progress on this journey!
+
+## See also
+
+- [[tcc-tools]] — essential tools for developing the TCC
+- [[glossary]] — terms like IoT, compression

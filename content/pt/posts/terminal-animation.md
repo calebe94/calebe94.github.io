@@ -4,9 +4,9 @@ description: Um Guia Passo a Passo
 date: '2023-09-15 16:00:00'
 tags:
   - PT_BR
-  - CSS
+  - blog
+  - shell
   - animation
-  - HTML5
 ---
 
 # Criando uma Animação CSS Estilo Terminal

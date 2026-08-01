@@ -3,12 +3,10 @@ title: Teclado MOMO
 description: Teclado mecânico com hotswap e RGB
 date: '2023-09-23 16:00:00'
 tags:
-  - DIY
   - PT_BR
-  - Mechanical Keyboards
+  - DIY
   - keyboards
   - qmk
-  - momo
 ---
 
 # Minha Jornada de Criação do Teclado Mecânico Momo

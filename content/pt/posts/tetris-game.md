@@ -3,8 +3,9 @@ title: Desenvolvendo o jogo Tetris em C++ com SDL2 e WebAssembly
 description: ''
 date: '2023-09-10 18:00:00'
 tags:
-  - DIY
   - PT_BR
+  - gaming
+  - c
 ---
 
 # 🎮 Desenvolvendo o jogo Tetris em C++ com SDL2 e WebAssembly 🚀

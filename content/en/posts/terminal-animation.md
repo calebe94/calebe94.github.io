@@ -4,9 +4,9 @@ description: A Step-by-Step Guide
 date: '2023-09-15 16:00:00'
 tags:
   - EN_US
-  - CSS
+  - blog
+  - shell
   - animation
-  - HTML5
 ---
 
 # Creating a Terminal-Style CSS Animation
@@ -163,3 +163,7 @@ Web development is all about creativity, and little details like this can make y
 ---
 
 Feel free to adapt this post to your site, add more details, and include any additional insights or challenges you faced while creating your terminal-style animation. Good luck!
+
+## See also
+
+- [[glossary]] — terms like Keyframe, @keyframes, Typewriter effect, Prompt

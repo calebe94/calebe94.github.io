@@ -4,6 +4,7 @@ description: ''
 date: '2023-02-23 20:50:26'
 tags:
   - EN_US
+  - c
 ---
 
 # Organizing a C project

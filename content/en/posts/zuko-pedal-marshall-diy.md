@@ -7,7 +7,6 @@ tags:
   - DIY
   - guitar
   - open-hardware
-  - ramones
 ---
 
 # Zuko: a DIY open hardware Marshall Plexi pedal
@@ -301,7 +300,7 @@ Gabba Gabba Hey!
 
 ## Glossary
 
-This post uses several terms from guitar, electronics, and digital audio. If any are unfamiliar, check the [blog glossary](/en/notes/glossary) — it's updated with every post.
+This post uses several terms from guitar, electronics, and digital audio. If any are unfamiliar, check the [[glossary]] — it's updated with every post.
 
 The main terms used here:
 
@@ -315,7 +314,11 @@ The main terms used here:
 | **mu-amp** | 2-JFET configuration that emulates power amp push-pull |
 | **Scooped mids** | Mid frequencies attenuated — that "hollow" aggressive sound |
 
-Full glossary with all terms: [/en/notes/glossary](/en/notes/glossary).
+Full glossary with all terms: [[glossary]].
+
+## See also
+
+- [[how_to_play_like_johnny_ramone]] — how to play guitar like Johnny Ramone
 
 ## References
 

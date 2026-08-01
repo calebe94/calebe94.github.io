@@ -2,7 +2,10 @@
 title: Migrando repositórios do Gitlab para o Github
 description: ''
 date: '2022-05-30 16:48:12'
-tags: []
+tags:
+  - PT_BR
+  - self-hosting
+  - git
 ---
 
 Migrando repositórios do Gitlab para o Github {#migrando-do-gitlab-para-o-github-1}

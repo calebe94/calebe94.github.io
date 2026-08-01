@@ -4,6 +4,8 @@ description: ''
 date: '2021-04-17 18:04:26'
 tags:
   - EN_US
+  - guitar
+  - ramones
 ---
 
 ## How to play guitar like Johnny Ramone
@@ -43,3 +45,8 @@ Another interesting channel is [Hardly Ramone](https://www.youtube.com/channel/U
   * [Bass Habits - Ep 9 - How to sound like Dee Dee Ramone](https://www.youtube.com/watch?v=vC6-AvpIJ5I)
 * Imgur
   * [Johnny Ramone - Power Chords](https://i.imgur.com/JfjIc9G.jpg)
+
+## See also
+
+- [[zuko-pedal-marshall-diy]] — my DIY open hardware Marshall Plexi pedal
+- [[glossary]] — terms like Downstrokes, Mosrite, Bridge pickup

@@ -3,12 +3,10 @@ title: MOMO Keyboard
 description: Mechanical keyboard with hotswap and RGB
 date: '2023-09-23 16:00:00'
 tags:
-  - DIY
   - EN_US
-  - Mechanical-Keyboards
+  - DIY
   - keyboards
   - qmk
-  - momo
 ---
 
 # My Journey Building the Momo Mechanical Keyboard
@@ -22,7 +20,7 @@ If you've ever stopped to think about the importance of the keyboard you use eve
 For many of us, a keyboard is much more than just a peripheral; it's an extension of our creativity and productivity, and every keystroke can be a unique experience.
 
 If you're a tech enthusiast looking for a customization adventure, building a mechanical keyboard is a fascinating journey.
-Recently, I shared the story behind my **Appa** keyboard, which uses Alps switches, in a [previous post](./teclado-appa.html).
+Recently, I shared the story behind my **Appa** keyboard, which uses Alps switches, in a [[teclado-appa|previous post]].
 
 Now, let's dive into the creation of the **Momo** mechanical keyboard, which, although inspired by "Appa," brings its own unique characteristics.
 This keyboard uses Cherry MX switches, features hotswap, and is a tribute to [Aang's](https://avatar.fandom.com/wiki/Aang) adorable pet, **Momo**.
@@ -156,4 +154,9 @@ This is just the beginning of my creative exploration and passion for technology
 As you dive deeper into the world of keyboard customization, you'll discover a vibrant community of enthusiasts who share the same passion.
 So, if you're ready for a customization adventure, go ahead and start planning your own mechanical keyboard. Remember to share your journey with other enthusiasts and inspire new creations. Who knows, you might create the next amazing keyboard everyone wants to have!
 
-If you'd like to learn more about the process of building custom mechanical keyboards, also check out my [previous post](./teclado-appa.html), which offers additional insights.
+If you'd like to learn more about the process of building custom mechanical keyboards, also check out my [[teclado-appa|previous post]], which offers additional insights.
+
+## See also
+
+- [[teclado-appa]] — the ALPS keyboard that inspired Momo
+- [[glossary]] — terms like QMK, hotswap, underglow, backlight, RP2040, WS2812B, SK6812

@@ -3,8 +3,11 @@ title: 'ESPBoy: Um Gameboy com o ESP32'
 description: Apenas mais um Gameboy feito com o ESP32
 date: '2019-01-03 01:00:00'
 tags:
-  - DIY
   - PT_BR
+  - DIY
+  - gaming
+  - embedded
+  - esp32
 ---
 
 # Especificação:

@@ -3,8 +3,10 @@ title: Building the Classic Pong in C with SDL2
 description: ''
 date: '2023-08-21 21:00:00'
 tags:
-  - DIY
   - EN_US
+  - gaming
+  - c
+  - sdl2
 ---
 
 # Building the Classic Pong in C with SDL2
@@ -35,3 +37,9 @@ One of the most exciting parts of building your own game is making it yours. Onc
 # Conclusion
 
 Building Pong in C with SDL2 is an exciting way to dive into game development. With the foundation provided in the [repository](https://github.com/Calebe94/sdl2-pong), you can explore the fundamentals behind Pong and eventually expand and customize the game to match your creative vision. So roll up your sleeves and start your game development journey!
+
+## See also
+
+- [[pong]] — my first game in C, the original Pong
+- [[tetris-game]] — Tetris in C++ with SDL2 and WebAssembly
+- [[glossary]] — terms like SDL2, game loop

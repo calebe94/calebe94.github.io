@@ -3,8 +3,10 @@ title: Construindo seu próprio teclado mecânico do zero
 description: Etapas para criação de um teclado mecânico
 date: '2023-02-23 21:00:00'
 tags:
-  - DIY
   - PT_BR
+  - DIY
+  - keyboards
+  - qmk
 ---
 
 # Construindo seu próprio teclado mecânico do zero

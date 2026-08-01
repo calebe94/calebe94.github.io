@@ -3,12 +3,10 @@ title: APPA Keyboard
 description: Mechanical keyboard with ALPS switches inspired by the plaid
 date: '2023-02-23 16:00:00'
 tags:
-  - DIY
   - EN_US
-  - Mechanical Keyboards
+  - DIY
   - keyboards
   - qmk
-  - appa
 ---
 
 # APPA Keyboard
@@ -53,7 +51,7 @@ I chose this name as a tribute to [Appa](https://avatar.fandom.com/wiki/Appa), a
 <img src="https://cdn11.bigcommerce.com/s-5242sis1by/images/stencil/2560w/products/282/1043/Appa__86978.1595902634.png" width="50%">
 </center>
 
-Since I had already decided to use [ALPS] switches in the project, I chose the name **Appa** because it starts with the letter "**A**". And I'll name a future keyboard project with [Cherry MX] switches **Momo**.
+Since I had already decided to use [ALPS] switches in the project, I chose the name **Appa** because it starts with the letter "**A**". And I'll name a future keyboard project with [Cherry MX] switches **Momo** — see [[teclado-momo]].
 
 ## Case Design
 
@@ -340,3 +338,8 @@ Finally, here's a video summarizing the assembly of the [Appa]:
 [Gertec]: https://www.gertec.com.br/
 [Mercado Livre]: https://www.mercadolivre.com.br/
 [QMK no Discord]: https://discord.com/invite/Uq7gcHh
+
+## See also
+
+- [[teclado-momo]] — the Cherry MX keyboard, Appa's successor
+- [[glossary]] — terms like QMK, ALPS, Cherry MX, USBaspLoader, WS2812B

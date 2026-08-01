@@ -4,6 +4,8 @@ description: ''
 date: '2022-05-30 16:48:12'
 tags:
   - EN_US
+  - self-hosting
+  - git
 ---
 
 Migrating repositories from Gitlab to Github {#migrando-do-gitlab-para-o-github-1}
@@ -69,3 +71,8 @@ any information in the process.
 
 All projects that had *issues* and *Merge Requests* were successfully
 imported to **Github**.
+
+## See also
+
+- [[em-busca-de-uma-interface-git]] — my search for a self-hosted git interface
+- [[glossary]] — terms like Merge Request, Pull Request, VPS

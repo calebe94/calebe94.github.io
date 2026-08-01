@@ -4,6 +4,7 @@ description: ''
 date: '2022-05-09 16:30:33'
 tags:
   - EN_US
+  - gaming
 ---
 
 # How about making a game?
@@ -167,3 +168,9 @@ See you soon!!!
 
 
 [Godot]: https://godotengine.org/
+
+## See also
+
+- [[ESPBoy-A-ESP32-Gameboy|ESPBoy]] — a homemade Gameboy with ESP32
+- [[pong]] — my first game in C, Pong with SDL2
+- [[glossary]] — terms like SDL2, Godot, GDNative, FOSS, Nuklear, LVGL

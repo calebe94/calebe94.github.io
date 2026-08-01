@@ -4,10 +4,8 @@ description: "Como um projeto de scripts shell cresceu e virou uma organização
 date: "2026-07-17 23:00:00"
 tags:
   - PT_BR
-  - DIY
-  - shell
   - suckless
-  - FOSS
+  - shell
 ---
 
 # TinyToolSH: Ferramentas minúsculas para melhorar sua produtividade

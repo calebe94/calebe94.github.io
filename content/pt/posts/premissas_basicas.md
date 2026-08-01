@@ -2,7 +2,9 @@
 title: Premissas básicas de desenvolvimento - Suckless
 description: ''
 date: '2021-04-17 18:04:26'
-tags: []
+tags:
+  - PT_BR
+  - suckless
 ---
 
 <main>
