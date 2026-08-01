@@ -8,19 +8,28 @@ import { classNames } from "../util/lang"
 const LangToggle: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
   // Detect page language from slug: /en/... = English, everything else = Portuguese
   const isEnglish = fileData.slug?.startsWith("en/") || fileData.slug === "en"
-  // Label comes from the CURRENT page's locale perspective:
-  // PT page → pt-BR locale → switchTo = "English" (where you'll go)
-  // EN page → en-US locale → switchTo = "Português" (where you'll go)
   const pageLocale = isEnglish ? "en-US" : "pt-BR"
   const label = i18n(pageLocale).components.langToggle?.switchTo ?? "EN"
-  // Flag shows the language you'd switch TO
-  // PT page → 🇬🇧 (switch to English), EN page → 🇧🇷 (switch to Portuguese)
-  const flag = isEnglish ? "🇧🇷" : "🇬🇧"
 
   return (
     <button class={classNames(displayClass, "langtoggle")} aria-label={label}>
-      <span class="langtoggle-flag" aria-hidden="true">{flag}</span>
-      <span class="langtoggle-label">{label}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="langIcon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-label={label}
+      >
+        <title>{label}</title>
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      </svg>
     </button>
   )
 }

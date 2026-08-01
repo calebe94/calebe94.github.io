@@ -1,5 +1,5 @@
 ---
-title: Home
+title: English
 description: Calebe94 — senior software engineer, cloud, backend and embedded systems
 lang: en
 ---

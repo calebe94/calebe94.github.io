@@ -22,7 +22,7 @@ A navegação é simples:
 - **[Posts](/posts/)** — Artigos e tutoriais completos. Teclados mecânicos, self-hosting, jogos em C/SDL2, ESP32, pedal de guitarra DIY, e o que mais aparecer. É onde eu documento projetos do começo ao fim, com código, fotos e os becos sem saída que eu peguei no caminho.
 - **[Notes](/notes/)** — Notas rápidas. É onde você está agora. Coisas curtas: um comando que resolveu um problema, um link que vale guardar, um glossário. Sem a estrutura de um post completo.
 - **[Uses](/uses/)** — As ferramentas e tecnologias que eu uso no dia a dia. Hardware, software, configuracoes.
-- **[Glossário](/notes/glossario)** — Termos técnicos que aparecem nos posts. Se eu falo de [Plexi](/notes/glossario#Plexi) ou JCM800 e você não sabe o que é, come aqui.
+- **[Glossário](/notes/glossary)** — Termos técnicos que aparecem nos posts. Se eu falo de [Plexi](/notes/glossary#Plexi) ou JCM800 e você não sabe o que é, come aqui.
 
 ## O que esse blog não é
 
