@@ -73,7 +73,7 @@ jobs:
           args: >-
             --base-url http://localhost:8080
             --no-progress
-            --exclude "https?://.*"
+            --exclude "https?://(?!localhost:8080).*"
             --exclude "mailto:.*"
             --exclude ".*\\.xml$"
             "public/**/*.html"
