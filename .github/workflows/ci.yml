@@ -63,18 +63,5 @@ jobs:
         with:
           name: site
           path: public
-      - name: Serve site
-        run: |
-          cd public && python3 -m http.server 8080 &
-          sleep 1
-      - name: Run lychee (internal links only)
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >-
-            --base-url http://localhost:8080
-            --no-progress
-            --exclude "https?://.*"
-            --exclude "mailto:.*"
-            --exclude ".*\\.xml$"
-            "public/**/*.html"
-          fail: true
+      - name: Check internal links
+        run: node scripts/check-links.mjs public/
