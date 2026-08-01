@@ -3,21 +3,48 @@
 .backlinks {
   flex-direction: column;
 
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
-  }
+  & > details {
+    border: 1px solid var(--darkgray);
+    border-radius: 4px;
+    padding: 0 0.8rem;
 
-  & > ul.overflow {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0;
-    max-height: calc(100% - 2rem);
-    overscroll-behavior: contain;
+    & > summary {
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      padding: 0.4rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
 
-    & > li {
-      & > a {
-        background-color: transparent;
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: "▸";
+        font-size: 0.8rem;
+        transition: transform 0.15s ease;
+      }
+    }
+
+    &[open] > summary::before {
+      transform: rotate(90deg);
+    }
+
+    & > ul.overflow {
+      list-style: none;
+      padding: 0 0 0.5rem 0;
+      margin: 0;
+      max-height: 250px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+
+      & > li {
+        & > a {
+          background-color: transparent;
+        }
       }
     }
   }
