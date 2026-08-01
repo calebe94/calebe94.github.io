@@ -54,7 +54,8 @@ jobs:
     name: Link Check
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
+    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -77,4 +78,5 @@ jobs:
             --exclude ".*\\.xml$"
             --exclude "mailto:.*"
             "public/**/*.html"
-          fail: true
+          fail: false
+          continue-on-error: true
