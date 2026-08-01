@@ -65,3 +65,7 @@ Finalmente, apresentarei meu TCC e o defenderei perante uma banca acadêmica.
 
 Este é o caminho que percorri até agora e o que ainda está por vir na minha jornada de TCC sobre compressão de dados na IoT. Este é um campo empolgante e em constante evolução, e estou ansioso para contribuir com novos conhecimentos que possam beneficiar o mundo da tecnologia. Fiquem ligados para mais atualizações à medida que avançamos nesta jornada!
 
+## Veja também
+
+- [[tcc-tools]] — ferramentas essenciais para o desenvolvimento do TCC
+

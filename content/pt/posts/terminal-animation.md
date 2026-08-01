@@ -163,3 +163,7 @@ Lembre-se de que o desenvolvimento web é tudo sobre criatividade, e pequenos de
 ---
 
 Sinta-se à vontade para adaptar este post ao seu site, adicionar mais detalhes e incluir quaisquer insights adicionais ou desafios que você enfrentou durante a criação da sua animação estilo terminal. Boa sorte!
+
+## Veja também
+
+- [[glossary]] — termos como Keyframe, @keyframes, Typewriter effect, Prompt

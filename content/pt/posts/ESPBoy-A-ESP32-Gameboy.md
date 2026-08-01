@@ -195,3 +195,9 @@ Foi utilizado o software de desenvolvimento de circuitos e placas de circuito im
 O resultado pode ser verificado na imagem abaixo:
 
 ![ESPBoy-PCB](https://i.imgur.com/mkLqXRc.jpg)
+
+## Veja também
+
+- [[Que-tal-criar-um-jogo]] — minha jornada aprendendo desenvolvimento de jogos
+- [[tetris-game]] — Tetris em C++ com SDL2 e WebAssembly
+- [[glossary]] — termos como ESP32, TFT, GPIO, PAM8403, TP4056, SD Card

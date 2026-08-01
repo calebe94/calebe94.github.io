@@ -72,3 +72,8 @@ absolutamente nada de informação no processo.
 Todos os projetos que possuíam *issues* e *Merge Requests* foram
 importados com sucesso no **Github**.
 
+## Veja também
+
+- [[em-busca-de-uma-interface-git]] — minha busca por uma interface git self-hosted
+- [[glossary]] — termos como Merge Request, Pull Request, VPS
+

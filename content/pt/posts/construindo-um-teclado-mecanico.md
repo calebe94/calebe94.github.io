@@ -64,7 +64,13 @@ Alguns itens opcionais, mas que tornam o trabalho mais fácil são:
 
 # Construção do meu teclado
 
-No próximo post, eu irei descrever como foi o processo de desenvolvimento e montagem do meu teclado mecânico.
+No próximo post, eu irei descrever como foi o processo de desenvolvimento e montagem do meu teclado mecânico — veja [[teclado-appa]] e [[teclado-momo]].
+
+## Veja também
+
+- [[teclado-appa]] — meu primeiro teclado mecânico (ALPS)
+- [[teclado-momo]] — o teclado Cherry MX, sucessor do Appa
+- [[glossary]] — termos como QMK, Cherry MX, ALPS, PCB, hotswap
 
 [KiCAD]: https://www.kicad.org/
 [EasyEDA]: https://easyeda.com/

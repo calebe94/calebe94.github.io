@@ -12,7 +12,7 @@ tags:
 Meu primeiro jogo em C
 ======================
 
-Como vimos no [post anterior](https://blog.calebe.dev.br/posts/Que-tal-criar-um-jogo.html),
+Como vimos no [[Que-tal-criar-um-jogo|post anterior]],
 estou com planos de criar um jogo em **C** e utilizando a biblioteca **SDL2**.
 
 Então para "pegar as manha" de como criar um jogo com a **SDL2**
@@ -31,5 +31,11 @@ Futuramente eu pretendo adicionar efeitos sonoros e sprites no jogo.
 Também pretendo criar uma demo web do jogo, utilizando Web Assembly.
 
 Bom... por enquanto é isso.
+
+## Veja também
+
+- [[pong-em-c-sdl2]] — versão detalhada do Pong em C com SDL2
+- [[tetris-game]] — Tetris em C++ com SDL2 e WebAssembly
+- [[glossary]] — termos como SDL2, WebAssembly
 
 Até a próxima!

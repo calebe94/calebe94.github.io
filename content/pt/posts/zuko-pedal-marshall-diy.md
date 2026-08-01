@@ -11,7 +11,7 @@ tags:
 
 # Zuko: um pedal Marshall Plexi DIY open hardware
 
-Eu comecei a aprender guitarra em novembro de 2020, e decidi isso por ser muito fã de Ramones. Desde então eu sempre quis ter o som do Johnny Ramone — aquele Marshall Plexi cranked (com o volume no máximo, saturando naturalmente), tudo no 10, downstrokes agressivos, sem pedais, sem firulas.
+Eu comecei a aprender guitarra em novembro de 2020, e decidi isso por ser muito fã de Ramones. Desde então eu sempre quis ter o som do Johnny Ramone ([[how_to_play_like_johnny_ramone]]) — aquele Marshall Plexi cranked (com o volume no máximo, saturando naturalmente), tudo no 10, downstrokes agressivos, sem pedais, sem firulas.
 
 O problema é que um Marshall Super Lead 100 custa mais que meu carro. E mesmo se eu tivesse um, eu moro em apartamento. Meus vizinhos já não gostam de mim.
 
@@ -299,7 +299,7 @@ Gabba Gabba Hey!
 
 ## Glossário
 
-Este post usa vários termos de guitarra, eletrônica e áudio digital. Se algum não for familiar, confira o [glossário do blog](/pt/notes/glossary) — ele é atualizado a cada post.
+Este post usa vários termos de guitarra, eletrônica e áudio digital. Se algum não for familiar, confira o [[glossary|glossário do blog]] — ele é atualizado a cada post.
 
 Os principais termos usados aqui:
 
@@ -313,7 +313,7 @@ Os principais termos usados aqui:
 | **mu-amp** | Configuração de 2 JFETs que emula o push-pull do power amp |
 | **Scooped mids** | Frequências médias atenuadas — som "oco" e agressivo |
 
-Glossário completo com todos os termos: [/pt/notes/glossary](/pt/notes/glossary).
+Glossário completo com todos os termos: [[glossary]].
 
 ## Referências
 

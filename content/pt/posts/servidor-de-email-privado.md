@@ -12,7 +12,7 @@ tags:
 
 ### `A saga da frustração`
 
-Como citei em um [post anterior](./em-busca-de-uma-interface-git.html) eu possuo uma instância do [Yunohost] em minha VPS. O [Yunohost] facilita muito a tarefa de instalar as suas aplicações “web” em seu servidor e possui algumas ferramentas para gerenciar o seu servidor. Uma delas é o servidor de email, para te notificar se algum erro ocorreu ao realizar o diagnóstico do servidor.
+Como citei em um [[em-busca-de-uma-interface-git|post anterior]] eu possuo uma instância do [Yunohost] em minha VPS. O [Yunohost] facilita muito a tarefa de instalar as suas aplicações “web” em seu servidor e possui algumas ferramentas para gerenciar o seu servidor. Uma delas é o servidor de email, para te notificar se algum erro ocorreu ao realizar o diagnóstico do servidor.
 É possível também realizar o redirecionamento de emails. Podendo o usuário cadastrar alguns emails na plataforma e quando receber algum email, o `postfix` se encarrega de entregar este email em uma conta pessoal do usuário.
 
 O meu plano era utilizar este recurso para cadastrar alguns emails como:
@@ -73,6 +73,11 @@ Ao procurar em fórums na internet, a maioria dos usuários desencoraja o uso de
 Muitos apontam ser muito mais barato assinar um serviço que gerencie o servidor e que possibilite a criação de vários emails.
 
 Logo, é isso que eu estarei pesquisando nas próximas semanas e documentarei o processo em um novo post.
+
+## Veja também
+
+- [[em-busca-de-uma-interface-git]] — minha busca por uma interface git self-hosted
+- [[glossary]] — termos como Yunohost, VPS, Postfix, SMTP Relay, SendGrid
 
 [SendGrid]: https://sendgrid.com
 [Twillio]: https://www.twillio.com

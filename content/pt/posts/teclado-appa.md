@@ -51,7 +51,7 @@ Eu escolhi esse nome em homenagem ao [Appa](https://avatar.fandom.com/wiki/Appa)
 <img src="https://cdn11.bigcommerce.com/s-5242sis1by/images/stencil/2560w/products/282/1043/Appa__86978.1595902634.png" width="50%">
 </center>
 
-Como eu já havia definido que eu utilizaria as teclas [ALPS] no projeto, eu decidi usar o nome **Appa**, por começar com a letra "**A**" E nomearei um próximo projeto de teclado com teclas [Cherry MX] de **Momo**.
+Como eu já havia definido que eu utilizaria as teclas [ALPS] no projeto, eu decidi usar o nome **Appa**, por começar com a letra "**A**" E nomearei um próximo projeto de teclado com teclas [Cherry MX] de **Momo** — veja [[teclado-momo]].
 
 ## Desenho da Case
 
@@ -312,6 +312,11 @@ Por fim, deixo aqui um vídeo sumarizando a montagem do [Appa]:
 <center>
 <video width="640" height="360" controls><source src="https://cloud.calebe.dev.br/s/nZ35dMQYYjKWWj7/download/Appa%20Keyboard.mp4" type="video/mp4" /></video>
 </center>
+
+## Veja também
+
+- [[teclado-momo]] — o teclado Cherry MX, sucessor do Appa
+- [[glossary]] — termos como QMK, ALPS, Cherry MX, USBaspLoader, WS2812B
 
 [Appa]: https://github.com/Calebe94/appa-firmware
 [swillkb]: http://builder.swillkb.com/

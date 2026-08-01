@@ -36,3 +36,9 @@ Uma das partes mais emocionantes de criar seu próprio jogo é a capacidade de p
 # Conclusão
 
 Criar um jogo Pong em C usando a biblioteca SDL2 é uma maneira emocionante de mergulhar no mundo do desenvolvimento de jogos. Com a base fornecida no repositório [link para o repositório](https://github.com/Calebe94/sdl2-pong), você pode começar a explorar a fundo os aspectos fundamentais por trás do Pong e, eventualmente, expandir e personalizar o jogo de acordo com sua visão criativa. Portanto, mãos à obra e comece sua jornada de criação de jogos!
+
+## Veja também
+
+- [[pong]] — meu primeiro jogo em C, o Pong original
+- [[tetris-game]] — Tetris em C++ com SDL2 e WebAssembly
+- [[glossary]] — termos como SDL2, game loop
