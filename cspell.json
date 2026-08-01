@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en,pt,pt_BR",
+  "import": ["@cspell/dict-pt-br/cspell-ext.json"],
+  "dictionaries": [
+    "pt-br",
+    "en_us",
+    "en-gb",
+    "software-terms",
+    "gaming-terms",
+    "git",
+    "node",
+    "python",
+    "typescript",
+    "bash",
+    "html",
+    "css",
+    "latex",
+    "makefile",
+    "fullstack",
+    "companies",
+    "filetypes"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": ".cspell/project-dictionary.txt",
+      "description": "Project-specific terms, brands, and proper nouns used across the blog"
+    },
+    {
+      "name": "pt-br-words",
+      "path": ".cspell/pt-br-words.txt",
+      "description": "Brazilian Portuguese technical and informal terms not in the base pt-br dictionary"
+    },
+    {
+      "name": "en-words",
+      "path": ".cspell/en-words.txt",
+      "description": "English technical and project-specific terms not in the base en_US dictionary"
+    }
+  ],
+  "dictionariesExtended": ["project-words", "pt-br-words", "en-words"],
+  "languageSettings": [
+    {
+      "languageId": "markdown",
+      "locale": "pt,pt_BR",
+      "dictionaries": [
+        "pt-br",
+        "project-words",
+        "pt-br-words",
+        "en_us",
+        "software-terms"
+      ]
+    },
+    {
+      "languageId": "markdown",
+      "locale": "en",
+      "dictionaries": [
+        "en_us",
+        "en-gb",
+        "project-words",
+        "en-words",
+        "software-terms"
+      ]
+    }
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "public/**",
+    "quartz/**",
+    ".git/**",
+    ".github/**",
+    ".hermes/**",
+    "package-lock.json",
+    "tsconfig.tsbuildinfo",
+    "*.trie.gz",
+    "*.txt.gz",
+    "content/pt/images/**",
+    "**/images/**",
+    "LICENSE",
+    "*.pdf"
+  ],
+  "ignoreRegExpList": [
+    "/```[\\s\\S]*?```/g",
+    "/`[^`]+`/g",
+    "/https?:\\/\\/[^\\s)]+/g",
+    "/\\[\\[[^\\]]+\\]\\]/g",
+    "/^\\s*\\|.*\\|\\s*$/gm"
+  ],
+  "ignoreWords": [
+    "frontmatter",
+    "callout",
+    "mermaid",
+    "skillicons",
+    "videoId",
+    "tocar",
+    "LangToggle",
+    "ProfileImage",
+    "LegacyRedirects"
+  ],
+  "useGitignore": true,
+  "gitignoreRoot": "."
+}

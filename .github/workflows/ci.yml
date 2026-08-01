@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with Quartz
+        run: npm run build
+      - name: Upload built site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          retention-days: 1
+
+  spell:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
+      - name: Install dependencies
+        run: npm ci
+      - name: Run cspell
+        run: npx cspell "content/**/*.md" --no-progress --config cspell.json
+
+  link-check:
+    name: Link Check
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: public
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --cache
+            --max-concurrency 4
+            --exclude-loopback
+            --exclude ".*\.xml$"
+            "public/**/*.html"
+          fail: true
