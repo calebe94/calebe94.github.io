@@ -17,6 +17,12 @@ npm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# hermes agent (local plans, kanban workspaces)
+.hermes/
+
+# lychee link-checker cache
+.lycheecache
+
 # misc
 *.pem
 .cache
