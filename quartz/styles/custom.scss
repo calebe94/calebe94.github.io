@@ -441,3 +441,42 @@ img {
     }
   }
 }
+
+// ---------------------------------------------------------------------------
+// Neurodivergent accessibility (TEA N1 + TDAH + TAG)
+// Phase 5 — reduced-motion, focus indicators, touch targets
+// ---------------------------------------------------------------------------
+
+// Reduced motion: disable all animations/transitions for users who request it
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Smooth scroll only for users who have no motion preference
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+// Visible focus indicators for keyboard navigation (AAA 7:1 contrast)
+:focus-visible {
+  outline: 3px solid var(--tertiary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+// Touch targets: minimum 44x44px for interactive toggle buttons (WCAG 2.5.5)
+.search button,
+.readermode,
+.langtoggle {
+  min-width: 44px;
+  min-height: 44px;
+}

@@ -5,7 +5,9 @@
 @use "./callouts.scss";
 
 html {
-  scroll-behavior: smooth;
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
   text-size-adjust: none;
   overflow-x: hidden;
   width: 100vw;
@@ -605,7 +607,11 @@ ol.overflow {
   }
 
   &.gradient-active {
-    mask-image: linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);
+    mask-image: linear-gradient(
+      to bottom,
+      black calc(100% - 50px),
+      transparent 100%
+    );
   }
 }
 
