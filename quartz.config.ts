@@ -1,5 +1,5 @@
-import { QuartzConfig } from "./quartz/cfg"
-import * as Plugin from "./quartz/plugins"
+import { QuartzConfig } from "./quartz/cfg";
+import * as Plugin from "./quartz/plugins";
 
 /**
  * Quartz 4 Configuration
@@ -10,7 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "Calebe94",
     pageTitleSuffix: "",
-    enableSPA: true,
+    enableSPA: false,
     enablePopovers: false,
     analytics: {
       provider: "plausible",
@@ -88,11 +88,11 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.CNAME(),
-      Plugin.LegacyRedirects()
+      Plugin.LegacyRedirects(),
       // Comment out CustomOgImages to speed up build time
       // Plugin.CustomOgImages(),
     ],
   },
-}
+};
 
-export default config
+export default config;
