@@ -3,8 +3,10 @@ title: Desenvolvendo o Clássico Pong em C com a Biblioteca SDL2
 description: ''
 date: '2023-08-21 21:00:00'
 tags:
-  - DIY
   - PT_BR
+  - gaming
+  - c
+  - sdl2
 ---
 
 # Desenvolvendo o Clássico Pong em C com a Biblioteca SDL2

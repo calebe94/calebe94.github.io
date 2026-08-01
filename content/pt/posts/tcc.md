@@ -5,12 +5,8 @@ description: >-
   IoT
 date: '2023-09-05 11:00:00'
 tags:
-  - DIY
   - PT_BR
-  - iot
-  - data
-  - compression
-  - final paper
+  - tcc
 ---
 
 # Desvendando a Eficiência das Técnicas de Compressão de Dados em Dispositivos IoT

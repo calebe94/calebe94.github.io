@@ -2,7 +2,10 @@
 title: Em busca de uma interface git self-hosted
 description: ''
 date: '2022-02-28 00:02:23'
-tags: []
+tags:
+  - PT_BR
+  - self-hosting
+  - git
 ---
 
 # Em busca de uma interface git self-hosted

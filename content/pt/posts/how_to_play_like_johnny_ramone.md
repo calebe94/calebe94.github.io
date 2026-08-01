@@ -2,7 +2,10 @@
 title: Como tocar guitarra como johnny Ramone
 description: ''
 date: '2021-04-17 18:04:26'
-tags: []
+tags:
+  - PT_BR
+  - guitar
+  - ramones
 ---
 
 ## Como tocar guitarra como Johnny Ramone

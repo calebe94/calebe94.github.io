@@ -2,7 +2,10 @@
 title: Ferramentas Essenciais para o Desenvolvimento do seu TCC
 description: ''
 date: '2023-09-05 13:00:00'
-tags: []
+tags:
+  - PT_BR
+  - tcc
+  - compression
 ---
 
 # Ferramentas Essenciais para o Desenvolvimento do seu TCC 🛠️📚

@@ -2,7 +2,9 @@
 title: Organização de projeto em C
 description: ''
 date: '2023-02-23 20:50:26'
-tags: []
+tags:
+  - PT_BR
+  - c
 ---
 
 # Organização de projeto em C

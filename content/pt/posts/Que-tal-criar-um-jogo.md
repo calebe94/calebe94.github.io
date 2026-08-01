@@ -2,7 +2,9 @@
 title: Que tal criar um jogo?
 description: ''
 date: '2022-05-09 16:30:33'
-tags: []
+tags:
+  - PT_BR
+  - gaming
 ---
 
 # Que tal criar um jogo?
