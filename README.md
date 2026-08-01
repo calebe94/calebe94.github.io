@@ -70,23 +70,17 @@ draft: false
 
 ## Glossary Linking Convention
 
-A technical glossary lives at [`content/notes/glossario.md`](content/notes/glossario.md), published at [`/notes/glossario`](https://blog.calebe.dev.br/notes/glossario).
+A technical glossary lives at [`content/pt/notes/glossary.md`](content/pt/notes/glossary.md) (pt-BR) and [`content/en/notes/glossary.md`](content/en/notes/glossary.md) (en-US), published at [`/pt/notes/glossary`](https://blog.calebe.dev.br/pt/notes/glossary) and [`/en/notes/glossary`](https://blog.calebe.dev.br/en/notes/glossary).
 
 **All blog posts must link technical terms to the glossary.** When a post introduces a term that exists in the glossary, link to it on first mention:
 
 ```markdown
-The [Plexi](/notes/glossario#Plexi) is a valve amp from the 60s...
+O [Plexi](/pt/notes/glossary#Plexi) é um amp valvulado dos anos 60...
 ```
 
-Or use Quartz wikilinks (resolved via `shortest` link resolution):
+For terms not yet in the glossary, add them to **both** `content/pt/notes/glossary.md` and `content/en/notes/glossary.md` (same `### Term` heading for consistent anchors), then link from the post.
 
-```markdown
-The [[notes/glossario#Plexi|Plexi]] is a valve amp...
-```
-
-For terms not yet in the glossary, add them to `content/notes/glossario.md` first, then link from the post.
-
-A post template with this convention pre-filled is at [`content/templates/new-post.md`](content/templates/new-post.md). The `templates/` directory is in Quartz's `ignorePatterns` so it won't render as a page — it's a reference for writers only.
+A post template with this convention pre-filled is at [`content/pt/templates/new-post.md`](content/pt/templates/new-post.md). The `templates/` directory is in Quartz's `ignorePatterns` so it won't render as a page — it's a reference for writers only.
 
 ## Configuration
 
