@@ -11,11 +11,11 @@ const config: QuartzConfig = {
     pageTitle: "Calebe94",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-GB",
+    locale: "pt-BR",
     baseUrl: "blog.calebe.dev.br",
     ignorePatterns: ["private", "**/templates", ".obsidian"],
     defaultDateType: "modified",
