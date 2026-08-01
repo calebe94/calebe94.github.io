@@ -63,11 +63,18 @@ jobs:
         with:
           name: site
           path: public
+      - name: Serve site
+        run: |
+          cd public && python3 -m http.server 8080 &
+          echo $! > server.pid
+          sleep 1
       - name: Run lychee (internal links only)
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
-            --offline
+            --base-url http://localhost:8080
             --no-progress
+            --exclude ".*\\.xml$"
+            --exclude "mailto:.*"
             "public/**/*.html"
           fail: true
