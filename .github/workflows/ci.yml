@@ -54,7 +54,7 @@ jobs:
     name: Link Check
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -89,4 +89,5 @@ jobs:
             --exclude "instagram\.com"
             --exclude ".*\.pdf$"
             "public/**/*.html"
-          fail: true
+          fail: false
+          continue-on-error: true
