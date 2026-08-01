@@ -46,3 +46,7 @@ A jornada de criar o seu Trabalho de Conclusão de Curso (TCC) pode ser desafiad
 
 Essas ferramentas podem facilitar a sua jornada na elaboração do TCC, economizando tempo e garantindo a qualidade do seu trabalho. Escolha aquelas que melhor atendam às suas necessidades e preferências. Boa sorte em sua pesquisa e na elaboração do seu TCC! 🌟🎓
 
+## Veja também
+
+- [[tcc]] — técnicas de compressão de dados em dispositivos IoT
+

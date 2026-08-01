@@ -107,4 +107,10 @@ Lendo as documentações do `git` e do [cgit] eu consegui hospedar um servidor g
 [Gitlab]: https://gitlab.com/
 [suckless]: https://suckless.org/
 [stagi]: https://git.codemadness.org/stagit/file/README.html
+## Veja também
+
+- [[servidor-de-email-privado]] — servidor de email self-hosted com Yunohost
+- [[migrando-do-gitlab-para-o-github]] — migrando repositórios do Gitlab para o Github
+- [[glossary]] — termos como self-hosted, VPS, CGI, cgit, stagit, Suckless
+
 [git-mirror]: https://github.com/janbaudisch/git-mirror

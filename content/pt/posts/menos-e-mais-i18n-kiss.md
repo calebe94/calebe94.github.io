@@ -46,7 +46,7 @@ Três princípios guiam tudo que eu faço nesse site:
 
 **KISS (Keep It Simple, Stupid).** Se resolve com um arquivo estático, não precisa de biblioteca. Se um componente tem 30 linhas, não precisa de 60.
 
-**Suckless.** O site tem que ser rápido, autocontido, e não depender de nada que eu não entenda completamente. Sem framework que faz mágica. Sem 200KB de JavaScript pra trocar um ícone.
+**Suckless.** O site tem que ser rápido, autocontido, e não depender de nada que eu não entenda completamente — veja [[premissas_basicas]]. Sem framework que faz mágica. Sem 200KB de JavaScript pra trocar um ícone.
 
 **Filosofia Unix.** Cada componente faz uma coisa bem feita. O toggle de idioma não sabe que o emitter de redirects existe. A estrutura de pastas é previsível: `pt/` e `en/` são irmãs, não casos especiais.
 
@@ -199,4 +199,4 @@ Esse site tem 139 arquivos estáticos, 52 arquivos Markdown, e zero dependência
 
 ---
 
-Esse post faz parte da série de bastidores do blog. Se você curte essa filosofia, dá uma olhada no [código fonte](https://github.com/Calebe94/blog) e no [glossário](/pt/notes/glossary) — ele é atualizado a cada post.
+Esse post faz parte da série de bastidores do blog. Se você curte essa filosofia, dá uma olhada no [código fonte](https://github.com/Calebe94/blog) e no [[glossary|glossário]] — ele é atualizado a cada post.

@@ -92,3 +92,10 @@ Neste exemplo, o diretório raiz do projeto contém o arquivo `main.c`, um diret
 * [Make a README](https://www.makeareadme.com/);
 * [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html).
 
+## Veja também
+
+- [[pong]] — meu primeiro jogo em C, o Pong com SDL2
+- [[pong-em-c-sdl2]] — versão detalhada do Pong em C com SDL2
+- [[tetris-game]] — Tetris em C++ com SDL2 e WebAssembly
+- [[glossary]] — termos como SDL2, Makefile
+

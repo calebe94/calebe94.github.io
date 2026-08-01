@@ -169,4 +169,10 @@ Até logo!!!
     * Esqueci de mencionar que estamos mantendo uma nota coletiva com ideias de jogos, ferramentas, tutoriais e vídeos que vamos encontrado. A nota pode ser acessada através [desse link](https://pad.calebe.dev.br/p/jogo).
 
 
+## Veja também
+
+- [[ESPBoy]] — um Gameboy caseiro com ESP32
+- [[pong]] — meu primeiro jogo em C, o Pong com SDL2
+- [[glossary]] — termos como SDL2, Godot, GDNative, FOSS, Nuklear, LVGL
+
 [Godot]: https://godotengine.org/

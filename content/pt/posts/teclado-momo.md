@@ -20,7 +20,7 @@ Se você já parou para pensar na importância do teclado que utiliza diariament
 Para muitos de nós, o teclado é muito mais do que apenas um periférico; ele é uma extensão da nossa criatividade e produtividade, e cada toque nas teclas pode ser uma experiência única.
 
 Se você é um entusiasta de tecnologia em busca de uma aventura de personalização, a construção de um teclado mecânico é uma jornada fascinante.
-Recentemente, compartilhei a história por trás do meu teclado **Appa**, que utiliza teclas Alps, em um [post anterior](./teclado-appa.html).
+Recentemente, compartilhei a história por trás do meu teclado **Appa**, que utiliza teclas Alps, em um [[teclado-appa|post anterior]].
 
 Agora, vamos mergulhar na criação do teclado mecânico **Momo**, que, embora tenha sido inspirado no "Appa", traz suas próprias características únicas.
 Este teclado utiliza switches Cherry MX, possui hotswap e é uma homenagem ao adorável animal de estimação do [Aang](https://avatar.fandom.com/wiki/Aang), o **Momo**.
@@ -94,7 +94,7 @@ Embora eu não tenha muitas fotos e vídeos do processo de montagem, criei um v�
 
 ### Programação
 
-A programação do teclado foi descomplicada, utilizando o [QMK] para gerar o firmware e adaptando o [código do Appa](https://github.com/Calebe94/appa-firmware) para o **RP2040**. Para obter mais detalhes sobre esse processo, confira o [post do Appa](https://blog.calebe.dev.br/posts/teclado-appa.html#bootloader-e-firmware).
+A programação do teclado foi descomplicada, utilizando o [QMK] para gerar o firmware e adaptando o [código do Appa](https://github.com/Calebe94/appa-firmware) para o **RP2040**. Para obter mais detalhes sobre esse processo, confira o [[teclado-appa|post do Appa]].
 
 ## O Toque Final: Personalização
 
@@ -154,4 +154,9 @@ Este é apenas o começo da minha exploração criativa e paixão pela tecnologi
 Conforme você mergulha mais fundo no mundo da customização de teclados, descobrirá uma comunidade vibrante de entusiastas que compartilham a mesma paixão.
 Portanto, se você está pronto para uma aventura de personalização, siga em frente e comece a planejar seu próprio teclado mecânico. Lembre-se de compartilhar sua jornada com outros entusiastas e inspirar novas criações. Quem sabe, você pode criar o próximo teclado incrível que todos desejam ter!
 
-Se desejar saber mais sobre o processo de criação de teclados mecânicos personalizados, confira também o meu [post anterior](./teclado-appa.html), que oferece insights adicionais.
+Se desejar saber mais sobre o processo de criação de teclados mecânicos personalizados, confira também o meu [[teclado-appa|post anterior]], que oferece insights adicionais.
+
+## Veja também
+
+- [[teclado-appa]] — o teclado ALPS que inspirou o Momo
+- [[glossary]] — termos como QMK, hotswap, underglow, backlight, RP2040, WS2812B, SK6812

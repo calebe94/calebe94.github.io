@@ -70,4 +70,10 @@ Quanto menos linhas de código seu código tem, mais habilidoso você se tornou,
 [Filosofia Unix]: http://www.linfo.org/unix_philosophy.html
 [Filosofia Suckless]: https://suckless.org/philosophy/
 [TL:DR]: https://www.lifewire.com/what-is-tldr-2483633
+
+## Veja também
+
+- [[tinytoolsh]] — ferramentas minúsculas para produtividade
+- [[menos-e-mais-i18n-kiss]] — refatorando o i18n do blog com KISS e filosofia Unix
+- [[glossary]] — termos como Suckless
 </main>

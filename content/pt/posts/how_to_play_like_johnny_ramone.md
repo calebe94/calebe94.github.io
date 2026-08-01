@@ -45,3 +45,8 @@ Outro canal interessante é o do [Hardly Ramone](https://www.youtube.com/channel
   * [Bass Habits - Ep 9 - How to sound like Dee Dee Ramone](https://www.youtube.com/watch?v=vC6-AvpIJ5I)
 * Imgur
   * [Johnny Ramone - Power Chords](https://i.imgur.com/JfjIc9G.jpg)
+
+## Veja também
+
+- [[zuko-pedal-marshall-diy]] — meu pedal Marshall Plexi DIY open hardware
+- [[glossary]] — termos como Downstrokes, Mosrite, Bridge pickup

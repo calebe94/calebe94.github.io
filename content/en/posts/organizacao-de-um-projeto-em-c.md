@@ -91,3 +91,10 @@ In this example, the project's root directory contains the `main.c` file, a `bui
 * [File Structure : Broad Institute of MIT and Harvard](https://mitcommlab.mit.edu/broad/commkit/file-structure/);
 * [Make a README](https://www.makeareadme.com/);
 * [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html).
+
+## See also
+
+- [[pong]] — my first game in C, Pong with SDL2
+- [[pong-em-c-sdl2]] — detailed Pong in C with SDL2
+- [[tetris-game]] — Tetris in C++ with SDL2 and WebAssembly
+- [[glossary]] — terms like SDL2, Makefile
