@@ -19,10 +19,10 @@ Esse site roda no [Quartz 4](https://quartz.jzhao.xyz/), estático, `self-hosted
 
 A navegação é simples:
 
-- **[Posts](/posts/)** — Artigos e tutoriais completos. Teclados mecânicos, self-hosting, jogos em C/SDL2, ESP32, pedal de guitarra DIY, e o que mais aparecer. É onde eu documento projetos do começo ao fim, com código, fotos e os becos sem saída que eu peguei no caminho.
-- **[Notes](/notes/)** — Notas rápidas. É onde você está agora. Coisas curtas: um comando que resolveu um problema, um link que vale guardar, um glossário. Sem a estrutura de um post completo.
-- **[Uses](/uses/)** — As ferramentas e tecnologias que eu uso no dia a dia. Hardware, software, configuracoes.
-- **[Glossário](/notes/glossario)** — Termos técnicos que aparecem nos posts. Se eu falo de [Plexi](/notes/glossario#Plexi) ou JCM800 e você não sabe o que é, come aqui.
+- **[Posts](/pt/posts/)** — Artigos e tutoriais completos. Teclados mecânicos, self-hosting, jogos em C/SDL2, ESP32, pedal de guitarra DIY, e o que mais aparecer. É onde eu documento projetos do começo ao fim, com código, fotos e os becos sem saída que eu peguei no caminho.
+- **[Notes](/pt/notes/)** — Notas rápidas. É onde você está agora. Coisas curtas: um comando que resolveu um problema, um link que vale guardar, um glossário. Sem a estrutura de um post completo.
+- **[Uses](/pt/uses/)** — As ferramentas e tecnologias que eu uso no dia a dia. Hardware, software, configuracoes.
+- **[Glossário](/pt/notes/glossary)** — Termos técnicos que aparecem nos posts. Se eu falo de [Plexi](/pt/notes/glossary#Plexi) ou JCM800 e você não sabe o que é, come aqui.
 
 ## O que esse blog não é
 
@@ -38,4 +38,4 @@ Se quiser me achar em outros lugares:
 - [LinkedIn](https://www.linkedin.com/in/calebe94/) — para coisas profissionais
 - [Links](https://links.calebe.dev.br/@calebe94) — tudo num lugar só
 
-E é isso. Dá uma olhada nos [posts](/posts/), e se algo te interessar, me manda uma mensagem. Até logo!
+E é isso. Dá uma olhada nos [posts](/pt/posts/), e se algo te interessar, me manda uma mensagem. Até logo!

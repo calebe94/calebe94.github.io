@@ -13,9 +13,9 @@ Opening paragraph: personal hook or direct question to reader. 2-4 sentences.
 Reference a recent event, conversation, or problem. First person ("eu", "meu").
 
 <!-- CONVENÇÃO: Todo post que usar termos técnicos deve linkar para o glossário.
-     Use a wikilink ou link relativo: [[notes/glossario|Glossário]] ou [Glossário](/notes/glossario)
+     Use a wikilink ou link relativo: [[notes/glossary|Glossário]] ou [Glossário](/pt/notes/glossary)
      Adicione o link na primeira menção de cada termo técnico, ex:
-     "O [Plexi](/notes/glossario#Plexi) é um amp valvulado..." -->
+     "O [Plexi](/pt/notes/glossary#Plexi) é um amp valvulado..." -->
 
 ## First Major Phase (e.g., Motivação / Início das pesquisas / Lista de materiais)
 
@@ -53,4 +53,4 @@ For BOMs or component lists, use compact tables:
 Reflect on the journey. Honest about what worked and what didn't.
 Link to repos: [projeto](https://github.com/Calebe94/projeto).
 
-> Não sabe algum termo? Consulte o [Glossário](/notes/glossario).
+> Não sabe algum termo? Consulte o [Glossário](/pt/notes/glossary).

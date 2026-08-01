@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-GB",
     baseUrl: "blog.calebe.dev.br",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "**/templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -87,7 +87,8 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
-      Plugin.CNAME()
+      Plugin.CNAME(),
+      Plugin.LegacyRedirects()
       // Comment out CustomOgImages to speed up build time
       // Plugin.CustomOgImages(),
     ],

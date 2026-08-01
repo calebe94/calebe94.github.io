@@ -20,7 +20,10 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => {
+        const slug = page.fileData.slug
+        return slug !== "index" && slug !== "pt/index" && slug !== "en/index"
+      },
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
@@ -38,6 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
+        { Component: Component.LangToggle() },
       ],
     }),
     Component.Explorer(),
@@ -63,6 +67,8 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+        { Component: Component.LangToggle() },
       ],
     }),
     Component.Explorer(),
