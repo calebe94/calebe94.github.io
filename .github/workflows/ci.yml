@@ -54,7 +54,7 @@ jobs:
     name: Link Check
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 3
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -63,31 +63,11 @@ jobs:
         with:
           name: site
           path: public
-      - name: Restore lychee cache
-        uses: actions/cache@v4
-        with:
-          path: .lycheecache
-          key: lychee-cache-${{ github.run_id }}
-          restore-keys: lychee-cache-
-      - name: Run lychee
+      - name: Run lychee (internal links only)
         uses: lycheeverse/lychee-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: >-
-            --cache
-            --cache-exclude-status 429
-            --max-concurrency 4
-            --timeout 10
-            --max-retries 1
-            --exclude-loopback
-            --exclude ".*\.xml$"
-            --exclude "git\.calebe\.dev\.br"
-            --exclude "youtube\.com"
-            --exclude "youtu\.be"
-            --exclude "linkedin\.com"
-            --exclude "instagram\.com"
-            --exclude ".*\.pdf$"
+            --offline
+            --no-progress
             "public/**/*.html"
-          fail: false
-          continue-on-error: true
+          fail: true
