@@ -12,11 +12,6 @@ tags:
 Opening paragraph: personal hook or direct question to reader. 2-4 sentences.
 Reference a recent event, conversation, or problem. First person ("eu", "meu").
 
-<!-- CONVENÇÃO: Todo post que usar termos técnicos deve linkar para o glossário.
-     Use a wikilink ou link relativo: [[notes/glossary|Glossário]] ou [Glossário](/pt/notes/glossary)
-     Adicione o link na primeira menção de cada termo técnico, ex:
-     "O [Plexi](/pt/notes/glossary#Plexi) é um amp valvulado..." -->
-
 ## First Major Phase (e.g., Motivação / Início das pesquisas / Lista de materiais)
 
 Body paragraph. Conversational but technical. Use inline code for commands: `dmesg -w`.
@@ -54,3 +49,15 @@ Reflect on the journey. Honest about what worked and what didn't.
 Link to repos: [projeto](https://github.com/Calebe94/projeto).
 
 > Não sabe algum termo? Consulte o [Glossário](/pt/notes/glossary).
+
+<!-- CONVENÇÃO: Todo post que usar termos técnicos deve linkar para o glossário.
+     Link na primeira menção de cada termo: [Plexi](/pt/notes/glossary#Plexi)
+     Se o termo não existe no glossário ainda, adicione em
+     content/pt/notes/glossary.md E content/en/notes/glossary.md (mesmo ### heading).
+     Nenhum termo técnico fica sem glossário. -->
+
+<!-- Glossário Analysis (preencher antes de publicar):
+     Listar aqui os termos técnicos do post:
+     - [ ] Termo1 — existe? adicionar? (pt/en)
+     - [ ] Termo2 — existe? adicionar? (pt/en)
+     -->
