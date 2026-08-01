@@ -4,10 +4,8 @@ description: "How a shell scripts project grew and became a GitHub organization"
 date: "2026-07-17 23:00:00"
 tags:
   - EN_US
-  - DIY
-  - shell
   - suckless
-  - FOSS
+  - shell
 ---
 
 # TinyToolSH: Tiny tools to boost your productivity

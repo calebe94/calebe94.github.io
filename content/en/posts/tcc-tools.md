@@ -4,6 +4,8 @@ description: ''
 date: '2023-09-05 13:00:00'
 tags:
   - EN_US
+  - tcc
+  - compression
 ---
 
 # Essential Tools for Developing Your Final Year Project 🛠️📚

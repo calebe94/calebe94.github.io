@@ -4,6 +4,8 @@ description: ''
 date: '2021-04-17 18:04:26'
 tags:
   - EN_US
+  - guitar
+  - ramones
 ---
 
 ## How to play guitar like Johnny Ramone

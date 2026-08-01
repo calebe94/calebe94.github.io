@@ -3,9 +3,10 @@ title: "Less is more: refactoring the blog's i18n with KISS and Unix philosophy"
 description: "I swapped flag emojis for a globe icon, moved 28 files around, and generated automatic redirects — all without a framework, without an i18n library, and without unnecessary JavaScript."
 date: "2026-08-01 00:00:00"
 tags:
+  - EN_US
+  - blog
   - suckless
-  - web
-  - quartz
+  - i18n
 ---
 
 # Less is more: refactoring the blog's i18n with KISS and Unix philosophy

@@ -3,8 +3,9 @@ title: Building Tetris in C++ with SDL2 and WebAssembly
 description: ''
 date: '2023-09-10 18:00:00'
 tags:
-  - DIY
   - EN_US
+  - gaming
+  - c
 ---
 
 # 🎮 Building Tetris in C++ with SDL2 and WebAssembly 🚀

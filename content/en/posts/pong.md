@@ -3,9 +3,10 @@ title: My first game in C
 description: Pong in SDL2
 date: '2022-05-19 21:19:33'
 tags:
-  - pong
-  - C
   - EN_US
+  - gaming
+  - c
+  - sdl2
 ---
 
 My first game in C

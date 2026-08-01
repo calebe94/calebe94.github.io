@@ -4,12 +4,8 @@ description: >-
   Unveiling the Efficiency of Data Compression Techniques in IoT Devices
 date: '2023-09-05 11:00:00'
 tags:
-  - DIY
   - EN_US
-  - iot
-  - data
-  - compression
-  - final paper
+  - tcc
 ---
 
 # Unveiling the Efficiency of Data Compression Techniques in IoT Devices

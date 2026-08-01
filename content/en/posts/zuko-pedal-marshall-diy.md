@@ -7,7 +7,6 @@ tags:
   - DIY
   - guitar
   - open-hardware
-  - ramones
 ---
 
 # Zuko: a DIY open hardware Marshall Plexi pedal

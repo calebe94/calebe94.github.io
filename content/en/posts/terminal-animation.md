@@ -4,9 +4,9 @@ description: A Step-by-Step Guide
 date: '2023-09-15 16:00:00'
 tags:
   - EN_US
-  - CSS
+  - blog
+  - shell
   - animation
-  - HTML5
 ---
 
 # Creating a Terminal-Style CSS Animation

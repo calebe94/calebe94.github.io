@@ -4,6 +4,7 @@ description: How to fix a corrupted zsh history file
 date: '2021-04-17 18:04:26'
 tags:
   - EN_US
+  - shell
 ---
 
 ## How to fix a corrupted ZSH history

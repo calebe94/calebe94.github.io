@@ -3,12 +3,10 @@ title: MOMO Keyboard
 description: Mechanical keyboard with hotswap and RGB
 date: '2023-09-23 16:00:00'
 tags:
-  - DIY
   - EN_US
-  - Mechanical-Keyboards
+  - DIY
   - keyboards
   - qmk
-  - momo
 ---
 
 # My Journey Building the Momo Mechanical Keyboard

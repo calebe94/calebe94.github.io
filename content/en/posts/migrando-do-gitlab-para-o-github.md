@@ -4,6 +4,8 @@ description: ''
 date: '2022-05-30 16:48:12'
 tags:
   - EN_US
+  - self-hosting
+  - git
 ---
 
 Migrating repositories from Gitlab to Github {#migrando-do-gitlab-para-o-github-1}

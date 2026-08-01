@@ -3,8 +3,10 @@ title: Building the Classic Pong in C with SDL2
 description: ''
 date: '2023-08-21 21:00:00'
 tags:
-  - DIY
   - EN_US
+  - gaming
+  - c
+  - sdl2
 ---
 
 # Building the Classic Pong in C with SDL2

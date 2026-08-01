@@ -4,6 +4,8 @@ description: ''
 date: '2022-03-01 22:21:33'
 tags:
   - EN_US
+  - self-hosting
+  - email
 ---
 
 # Self-hosted email server

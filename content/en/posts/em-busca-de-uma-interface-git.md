@@ -2,7 +2,10 @@
 title: In Search of a Self-Hosted Git Interface
 description: ''
 date: '2022-02-28 00:02:23'
-tags: [EN_US]
+tags:
+  - EN_US
+  - self-hosting
+  - git
 ---
 
 # In Search of a Self-Hosted Git Interface

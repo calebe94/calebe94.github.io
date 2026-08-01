@@ -3,12 +3,10 @@ title: APPA Keyboard
 description: Mechanical keyboard with ALPS switches inspired by the plaid
 date: '2023-02-23 16:00:00'
 tags:
-  - DIY
   - EN_US
-  - Mechanical Keyboards
+  - DIY
   - keyboards
   - qmk
-  - appa
 ---
 
 # APPA Keyboard
