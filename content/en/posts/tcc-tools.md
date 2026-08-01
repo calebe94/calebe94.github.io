@@ -45,3 +45,8 @@ The journey of creating your Final Year Project (TCC — Trabalho de Conclusão 
 **16. [Perplexity.ai](https://www.perplexity.ai/) (Writing Assistance) 📝✨:** For advanced assistance in writing your project, Perplexity.ai is a powerful tool that offers support in text generation, review, and creating quality content.
 
 These tools can make your journey of developing your final year project easier, saving time and ensuring the quality of your work. Choose the ones that best suit your needs and preferences. Good luck with your research and your project! 🌟🎓
+
+## See also
+
+- [[tcc]] — data compression techniques on IoT devices
+- [[glossary]] — terms like IoT, TCC

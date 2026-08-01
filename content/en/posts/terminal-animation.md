@@ -163,3 +163,7 @@ Web development is all about creativity, and little details like this can make y
 ---
 
 Feel free to adapt this post to your site, add more details, and include any additional insights or challenges you faced while creating your terminal-style animation. Good luck!
+
+## See also
+
+- [[glossary]] — terms like Keyframe, @keyframes, Typewriter effect, Prompt

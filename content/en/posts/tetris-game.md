@@ -138,3 +138,10 @@ Building a Tetris game in C++ and SDL2 is a rewarding journey that covers variou
 Stay tuned for future updates as I improve our Tetris game and explore even more game development concepts. I hope this journey has inspired you to embark on your own game development adventure!
 
 Remember that you can try out the Tetris game both on the desktop and on the web, thanks to the power of WebAssembly. The complete game source code is available at [https://github.com/calebe94/tetris](https://github.com/calebe94/tetris), and you can play it at [https://blog.calebe.dev.br/tetris/](https://blog.calebe.dev.br/tetris/). Have fun playing and exploring the world of game development!
+
+## See also
+
+- [[pong]] — my first game in C, the original Pong
+- [[pong-em-c-sdl2]] — the detailed Pong in C with SDL2
+- [[ESPBoy-A-ESP32-Gameboy|ESPBoy]] — a homemade Gameboy with ESP32
+- [[glossary]] — terms like SDL2, WebAssembly, Tetromino, Dear ImGui, Emscripten

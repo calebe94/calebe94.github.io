@@ -108,3 +108,9 @@ By reading the `git` and [cgit] documentation, I was able to host a simple and l
 [suckless]: https://suckless.org/
 [stagi]: https://git.codemadness.org/stagit/file/README.html
 [git-mirror]: https://github.com/janbaudisch/git-mirror
+
+## See also
+
+- [[servidor-de-email-privado]] — self-hosted email server with Yunohost
+- [[migrando-do-gitlab-para-o-github]] — migrating repositories from Gitlab to Github
+- [[glossary]] — terms like self-hosted, VPS, CGI, cgit, stagit, Suckless

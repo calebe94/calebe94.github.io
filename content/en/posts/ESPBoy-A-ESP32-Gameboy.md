@@ -195,3 +195,9 @@ I used the online circuit and PCB development software [EasyEDA](https://easyeda
 The result can be seen in the image below:
 
 ![ESPBoy-PCB](https://i.imgur.com/mkLqXRc.jpg)
+
+## See also
+
+- [[Que-tal-criar-um-jogo]] — my journey learning game development
+- [[tetris-game]] — Tetris in C++ with SDL2 and WebAssembly
+- [[glossary]] — terms like ESP32, TFT, GPIO, PAM8403, TP4056, SD Card

@@ -12,7 +12,7 @@ tags:
 
 ### `The saga of frustration`
 
-As I mentioned in a [previous post](./em-busca-de-uma-interface-git.html), I have a [Yunohost] instance running on my VPS. [Yunohost] makes it incredibly easy to install your "web" apps on your server and comes with some handy tools to manage everything. One of those tools is the email server, which notifies you if any errors occur during server diagnostics.
+As I mentioned in a [[em-busca-de-uma-interface-git|previous post]], I have a [Yunohost] instance running on my VPS. [Yunohost] makes it incredibly easy to install your "web" apps on your server and comes with some handy tools to manage everything. One of those tools is the email server, which notifies you if any errors occur during server diagnostics.
 
 You can also set up email forwarding. Users can register a few email addresses on the platform, and whenever an email arrives, `postfix` takes care of delivering it to the user's personal account.
 
@@ -78,3 +78,8 @@ So that's what I'll be researching over the next few weeks, and I'll document th
 [Twillio]: https://www.twillio.com
 [Yunohost]: yunohost.org
 [Digital Ocean]: https://www.digitalocean.com/
+
+## See also
+
+- [[em-busca-de-uma-interface-git]] — my search for a self-hosted git interface
+- [[glossary]] — terms like Yunohost, VPS, Postfix, SMTP Relay, SendGrid

@@ -130,3 +130,8 @@ If you're into the Unix philosophy of small tools that work well together, check
 And if you want to contribute, all tools are under [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). There are open `issue`s across several repositories.
 
 See you next time!!!
+
+## See also
+
+- [[premissas_basicas]] — fundamental premises: Unix and Suckless philosophy
+- [[glossary]] — terms like Suckless, dmenu, systemd, journalctl

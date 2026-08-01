@@ -71,3 +71,8 @@ any information in the process.
 
 All projects that had *issues* and *Merge Requests* were successfully
 imported to **Github**.
+
+## See also
+
+- [[em-busca-de-uma-interface-git]] — my search for a self-hosted git interface
+- [[glossary]] — terms like Merge Request, Pull Request, VPS
