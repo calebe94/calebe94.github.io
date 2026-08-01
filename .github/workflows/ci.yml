@@ -54,8 +54,7 @@ jobs:
     name: Link Check
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    continue-on-error: true
+    timeout-minutes: 2
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -67,7 +66,6 @@ jobs:
       - name: Serve site
         run: |
           cd public && python3 -m http.server 8080 &
-          echo $! > server.pid
           sleep 1
       - name: Run lychee (internal links only)
         uses: lycheeverse/lychee-action@v2
@@ -75,8 +73,8 @@ jobs:
           args: >-
             --base-url http://localhost:8080
             --no-progress
-            --exclude ".*\\.xml$"
+            --exclude "https?://.*"
             --exclude "mailto:.*"
+            --exclude ".*\\.xml$"
             "public/**/*.html"
-          fail: false
-          continue-on-error: true
+          fail: true
