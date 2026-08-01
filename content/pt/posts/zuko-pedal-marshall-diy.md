@@ -300,7 +300,7 @@ Gabba Gabba Hey!
 
 ## Glossário
 
-Este post usa vários termos de guitarra, eletrônica e áudio digital. Se algum não for familiar, confira o [glossário do blog](/notes/glossary) — ele é atualizado a cada post.
+Este post usa vários termos de guitarra, eletrônica e áudio digital. Se algum não for familiar, confira o [glossário do blog](/pt/notes/glossary) — ele é atualizado a cada post.
 
 Os principais termos usados aqui:
 
@@ -314,7 +314,7 @@ Os principais termos usados aqui:
 | **mu-amp** | Configuração de 2 JFETs que emula o push-pull do power amp |
 | **Scooped mids** | Frequências médias atenuadas — som "oco" e agressivo |
 
-Glossário completo com todos os termos: [/notes/glossary](/notes/glossary).
+Glossário completo com todos os termos: [/pt/notes/glossary](/pt/notes/glossary).
 
 ## Referências
 

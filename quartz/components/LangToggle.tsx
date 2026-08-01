@@ -6,7 +6,7 @@ import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 
 const LangToggle: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
-  // Detect page language from slug: /en/... = English, everything else = Portuguese
+  // Detect page language from slug: /en/... = English, /pt/... = Portuguese
   const isEnglish = fileData.slug?.startsWith("en/") || fileData.slug === "en"
   const pageLocale = isEnglish ? "en-US" : "pt-BR"
   const label = i18n(pageLocale).components.langToggle?.switchTo ?? "EN"

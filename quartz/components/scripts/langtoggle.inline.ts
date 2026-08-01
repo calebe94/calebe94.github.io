@@ -1,4 +1,4 @@
-// Language toggle: swaps between pt-BR (root) and EN-US (/en/)
+// Language toggle: swaps between pt-BR (/pt/) and EN-US (/en/)
 // Mirrors the darkmode.inline.ts pattern — attaches on "nav" event
 function getLangFromPath(pathname: string): "pt" | "en" {
   return pathname.startsWith("/en/") || pathname === "/en" ? "en" : "pt"
@@ -7,14 +7,18 @@ function getLangFromPath(pathname: string): "pt" | "en" {
 function computeTargetURL(pathname: string): string {
   const isEnglish = pathname.startsWith("/en/") || pathname === "/en"
   if (isEnglish) {
-    // /en/posts/foo → /posts/foo, /en → /
-    let target = pathname.replace(/^\/en/, "")
-    if (target === "") target = "/"
+    // /en/posts/foo → /pt/posts/foo, /en → /pt/
+    let target = pathname.replace(/^\/en/, "/pt")
+    if (target === "/pt") target = "/pt/"
+    return target
+  } else if (pathname.startsWith("/pt/") || pathname === "/pt") {
+    // /pt/posts/foo → /en/posts/foo, /pt/ → /en/
+    let target = pathname.replace(/^\/pt/, "/en")
+    if (target === "/en") target = "/en/"
     return target
   } else {
-    // /posts/foo → /en/posts/foo, / → /en/
-    const target = pathname === "/" ? "/en/" : "/en" + pathname
-    return target
+    // Root or unknown — default to /pt/
+    return "/pt/"
   }
 }
 
