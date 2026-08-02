@@ -15,7 +15,8 @@
     "build": "node quartz/bootstrap-cli.mjs build",
     "serve": "node quartz/bootstrap-cli.mjs build --serve",
     "check": "tsc --noEmit && npx prettier . --check",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "test": "node --import tsx --test quartz/components/scripts/readermode.inline.test.ts"
   },
   "engines": {
     "npm": ">=10.9.2",
