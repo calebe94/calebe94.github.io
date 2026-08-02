@@ -130,6 +130,11 @@ button.desktop-explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      @media all and ($mobile) {
+        display: inline-block;
+        padding: 0.5rem 0;
+        font-size: 1.05rem;
+      }
 
       &.active {
         opacity: 1;
@@ -157,6 +162,10 @@ button.desktop-explorer {
     margin-left: 6px;
     padding-left: 0.8rem;
     border-left: 1px solid var(--lightgray);
+    @media all and ($mobile) {
+      margin-left: 10px;
+      padding-left: 1.2rem;
+    }
   }
 }
 
@@ -165,6 +174,10 @@ button.desktop-explorer {
   display: flex;
   align-items: center;
   user-select: none;
+  // Mobile touch target improvements
+  @media all and ($mobile) {
+    padding: 0.5rem 0;
+  }
 
   & div > a {
     color: var(--secondary);
@@ -173,6 +186,11 @@ button.desktop-explorer {
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
     display: inline-block;
+    // Mobile touch target improvements
+    @media all and ($mobile) {
+      font-size: 1.1rem;
+      padding: 0.25rem 0;
+    }
   }
 
   & div > a:hover {
@@ -203,13 +221,17 @@ button.desktop-explorer {
   }
 }
 
-.folder-icon {
+  .folder-icon {
   margin-right: 5px;
   color: var(--secondary);
   cursor: pointer;
   transition: transform 0.3s ease;
   backface-visibility: visible;
   flex-shrink: 0;
+  @media all and ($mobile) {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
 li:has(> .folder-outer:not(.open)) > .folder-container > svg {
@@ -261,13 +283,20 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       visibility: hidden;
     }
 
-    .mobile-explorer {
+  .mobile-explorer {
       margin: 0;
-      padding: 5px;
+      padding: 10px; // Aumentado para melhor touch
       z-index: 101;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .lucide-menu {
         stroke: var(--darkgray);
+        width: 28px;
+        height: 28px;
       }
     }
   }
