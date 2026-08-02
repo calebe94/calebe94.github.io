@@ -292,6 +292,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: auto; // Alinha o botão do menu à direita em dispositivos móveis
 
       .lucide-menu {
         stroke: var(--darkgray);
