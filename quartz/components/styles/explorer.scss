@@ -221,7 +221,7 @@ button.desktop-explorer {
   }
 }
 
-  .folder-icon {
+.folder-icon {
   margin-right: 5px;
   color: var(--secondary);
   cursor: pointer;
@@ -283,7 +283,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       visibility: hidden;
     }
 
-  .mobile-explorer {
+    .mobile-explorer {
       margin: 0;
       padding: 10px; // Aumentado para melhor touch
       z-index: 101;
