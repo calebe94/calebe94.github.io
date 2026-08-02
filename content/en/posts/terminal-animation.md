@@ -9,8 +9,6 @@ tags:
   - animation
 ---
 
-# Creating a Terminal-Style CSS Animation
-
 Sometimes it's the little details that make a site stand out. I wanted to add a terminal-style CSS animation to my site — complete with a typing effect and a blinking cursor. It's an eye-catching touch that gives the page personality. Let me show you how I did it!
 
 ## Planning the Animation

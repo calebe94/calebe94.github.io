@@ -8,8 +8,6 @@ tags:
   - email
 ---
 
-# Servidor de email (self-hosted)
-
 ### `A saga da frustração`
 
 Como citei em um [[em-busca-de-uma-interface-git|post anterior]] eu possuo uma instância do [Yunohost] em minha VPS. O [Yunohost] facilita muito a tarefa de instalar as suas aplicações “web” em seu servidor e possui algumas ferramentas para gerenciar o seu servidor. Uma delas é o servidor de email, para te notificar se algum erro ocorreu ao realizar o diagnóstico do servidor.

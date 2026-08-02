@@ -9,8 +9,6 @@ tags:
   - sdl2
 ---
 
-# Desenvolvendo o Clássico Pong em C com a Biblioteca SDL2
-
 O mundo dos jogos eletrônicos é repleto de clássicos que marcaram gerações. Um desses jogos é o lendário Pong, que definiu o gênero de jogos de esporte virtual. Se você é um entusiasta da programação e deseja mergulhar na criação de jogos, está no lugar certo! Nesta postagem, vamos explorar como desenvolver o icônico jogo Pong em C, utilizando a poderosa biblioteca SDL2.
 
 <center>

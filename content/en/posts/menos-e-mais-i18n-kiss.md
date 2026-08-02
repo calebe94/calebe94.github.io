@@ -9,8 +9,6 @@ tags:
   - i18n
 ---
 
-# Less is more: refactoring the blog's i18n with KISS and Unix philosophy
-
 If you've ever tried to maintain a site in two languages, you know the annoying part isn't translating the content — it's the infrastructure. Where do the files go? How do you build the toggle? What do you do with old links when you move everything around?
 
 I'd been kicking these problems down the road ever since I migrated the blog from Astro Cactus to Quartz 4. It worked, but it was ugly. And I'm the kind of person who gets bothered by ugly things.

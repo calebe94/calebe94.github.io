@@ -8,8 +8,6 @@ tags:
   - shell
 ---
 
-# TinyToolSH: Ferramentas minúsculas para melhorar sua produtividade
-
 Eu e o [Gabo](https://github.com/gbgabo) compartilhamos de uma filosofia bem parecida quando se trata de software: coisas pequenas que fazem uma coisa bem feita. Não é à toa que somos fãs da [filosofia suckless](https://suckless.org/philosophy/).
 
 Em algum momento de 2020 nós começamos a escrever pequenos scripts em `shell` para automatizar tarefas chatas do dia a dia. Coisas simples: um wrapper do `dmenu` para criar notas em Markdown, um cronômetro pomodoro no terminal, um script que baixa imagens de satélite do [GOES](https://www.star.nesdis.noaa.gov/GOES/) e coloca como wallpaper.

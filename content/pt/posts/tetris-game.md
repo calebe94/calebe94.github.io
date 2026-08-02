@@ -8,8 +8,6 @@ tags:
   - c
 ---
 
-# 🎮 Desenvolvendo o jogo Tetris em C++ com SDL2 e WebAssembly 🚀
-
 No mundo do desenvolvimento de jogos, Tetris é um clássico que dispensa apresentações. Sua jogabilidade simples, porém viciante, cativou jogadores por décadas. Neste post, levaremos você a uma jornada pelo processo de criação de um jogo Tetris em C++ usando a biblioteca SDL2 e exploraremos como levar esse jogo para a web usando WebAssembly. Vamos abordar os passos e conceitos-chave, desde a configuração do ambiente de desenvolvimento até a implementação da mecânica do jogo e das interfaces de usuário.
 
 <center>

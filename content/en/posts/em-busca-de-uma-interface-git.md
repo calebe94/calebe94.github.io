@@ -8,8 +8,6 @@ tags:
   - git
 ---
 
-# In Search of a Self-Hosted Git Interface
-
 I was on the hunt for a `git` interface to host my projects on my own server, serving as a sort of portfolio.
 
 I already knew that [gitlab] allows users to create their own instance (self-host) on their servers, and I had hosted a [gitlab] instance on my VPS myself.

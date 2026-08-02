@@ -9,8 +9,6 @@ tags:
   - qmk
 ---
 
-# Construindo seu próprio teclado mecânico do zero
-
 Se você deseja criar seu próprio teclado, há algumas coisas que você precisa fazer.
 Primeiro, você precisa decidir que categoria de teclado deseja criar.
 

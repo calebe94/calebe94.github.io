@@ -9,8 +9,6 @@ tags:
   - open-hardware
 ---
 
-# Zuko: um pedal Marshall Plexi DIY open hardware
-
 Eu comecei a aprender guitarra em novembro de 2020, e decidi isso por ser muito fã de Ramones. Desde então eu sempre quis ter o som do Johnny Ramone ([[how_to_play_like_johnny_ramone]]) — aquele Marshall Plexi cranked (com o volume no máximo, saturando naturalmente), tudo no 10, downstrokes agressivos, sem pedais, sem firulas.
 
 O problema é que um Marshall Super Lead 100 custa mais que meu carro. E mesmo se eu tivesse um, eu moro em apartamento. Meus vizinhos já não gostam de mim.

@@ -10,8 +10,6 @@ tags:
   - esp32
 ---
 
-# Especificação:
-
 Desenvolver um console portátil utilizando o microcontrolador ESP32 para ser apresentado na [Mostra de Profissões](https://www.up.edu.br/blogs/mostra-de-profissoes/) da Universidade Positivo no dia 1.º de agosto de 2018.
 
 O console deverá conseguir emular jogos da (4.º) geração de consoles portáteis como o [Gameboy](https://pt.wikipedia.org/wiki/Game_Boy) e  [Game Gear](https://pt.wikipedia.org/wiki/Game_Gear) e também consoles da (3.º) geração como  [Master System](https://pt.wikipedia.org/wiki/Master_System) e [NES](https://pt.wikipedia.org/wiki/NES). Sendo que,  console seja capaz de rodar pelo menos 1(um) jogo de qualquer um dos consoles acima durante a apresentação, ou seja, não há a necessidade de implementar todos os emuladores e nem a capacidade de inserir diversos jogos no mesmo dispositivo.

@@ -7,8 +7,6 @@ tags:
   - gaming
 ---
 
-# Que tal criar um jogo?
-
 Recentemente um amigo meu começou a fazer um curso de
 [Unity](https://unity.com/) e durante uma conversa nós ficamos muito
 empolgados em criar um jogo.

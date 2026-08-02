@@ -7,8 +7,6 @@ tags:
   - gaming
 ---
 
-# How about making a game?
-
 Recently a friend of mine started taking a
 [Unity](https://unity.com/) course, and during a chat we got really
 excited about making a game.

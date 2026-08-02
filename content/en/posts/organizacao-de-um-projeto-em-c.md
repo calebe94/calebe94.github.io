@@ -7,8 +7,6 @@ tags:
   - c
 ---
 
-# Organizing a C project
-
 I love keeping my source files organized in a logical, consistent file structure — it's absolutely essential for the maintainability, readability, and scalability of my code!
 
 Here are some of the best practices I follow when organizing source files into a file structure hierarchy:

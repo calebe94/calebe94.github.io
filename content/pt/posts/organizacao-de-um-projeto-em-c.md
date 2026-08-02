@@ -7,8 +7,6 @@ tags:
   - c
 ---
 
-# Organização de projeto em C
-
 Organizar seus arquivos de código fonte em uma estrutura de arquivos lógica e consistente é importante para a manutenibilidade, legibilidade e escalabilidade do código.
 
 Aqui estão algumas das melhores práticas para organizar arquivos de origem em pastas de estrutura de arquivos:
