@@ -1,38 +1,22 @@
-name: CI
+name: CI/CD
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: "npm"
-          cache-dependency-path: "package-lock.json"
-      - name: Install dependencies
-        run: npm ci
-      - name: Build with Quartz
-        run: npm run build
-      - name: Upload built site
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: public
-          retention-days: 1
-
   spell:
     name: Spell Check
     runs-on: ubuntu-latest
@@ -50,6 +34,35 @@ jobs:
       - name: Run cspell
         run: npx cspell "content/**/*.md" --no-progress --config cspell.json
 
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with Quartz
+        run: npm run build
+      - name: Upload site artifact for link check
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          retention-days: 1
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
   link-check:
     name: Link Check
     needs: build
@@ -65,3 +78,16 @@ jobs:
           path: public
       - name: Check internal links
         run: node scripts/check-links.mjs public/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: [build, spell, link-check]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
