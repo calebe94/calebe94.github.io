@@ -1,32 +1,43 @@
-# Brazilian Portuguese informal, technical, and project-specific terms
-# not covered by the base @cspell/dict-pt-br dictionary
-# Sorted alphabetically; one word/term per line
 
+# Brazilian Portuguese informal, technical, and project-specific terms
+# Sorted alphabetically; one word/term per line
+# not covered by the base @cspell/dict-pt-br dictionary
 Archieve
-biasar
 Cacá
 Castanho
-comúns
 Conclusão
-configuracoes
 Convolução
+Diodo
+Estrutra
+Fator
+Graxa
+Ideias
+Ingá
+Música
+Porta
+Português
+Positivo
+Profissões
+Projeto
+Sematary
+Tetris
+Trabalho
+Universidade
+agentico
+biasar
+comúns
+configuracoes
 craftados
 darkmode
-Diodo
 dowm
-Estrutra
 fanalyzer
-Fator
 finalle
 flashar
 fórums
 gerber
 gitlab
-Graxa
 historico
-Ideias
 inconsitente
-Ingá
 linkar
 linkava
 meuusuario
@@ -34,29 +45,19 @@ modulos
 motherfuckingwebsite
 mygcc
 múscas
-Música
 necessáriamente
 nginx
 periódicamente
-Porta
 portifólio
-Português
-Positivo
-Profissões
-Projeto
 protoboard
 readermode
 rearquitetura
 rendererizar
 securemotherfuckingwebsite
-Sematary
 sujestivo
 tecnica
-Tetris
 tgoeswall
 tgoeswallctrl
 tpomodoro
-Trabalho
-Universidade
 voilá
 wikilink
