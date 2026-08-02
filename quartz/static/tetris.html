@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tetris — C++/SDL2 implementation compiled to WebAssembly. Play in your browser." />
+    <meta property="og:title" content="🎮 Tetris (WASM)" />
+    <meta property="og:description" content="Classic Tetris written in C++/SDL2, running in your browser via WebAssembly." />
+    <meta property="og:type" content="website" />
+    <title>🎮 Tetris</title>
+    <style>
+        :root {
+            --bg: #151515;
+            --fg: #fafafa;
+            --muted: #c8c8c8;
+            --accent: #2ecc40;
+            --panel: #2a2a2a;
+            --border: #555555;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: "Courier Prime", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            width: 100%;
+            padding: 12px 20px;
+            background: var(--panel);
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 1.4rem; }
+        header a { color: var(--accent); text-decoration: none; margin-left: 12px; }
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 720px;
+            padding: 16px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .canvas_wrapper { display: flex; justify-content: center; width: 100%; }
+        canvas.emscripten { border: 0; background: #000; max-width: 100%; height: auto; }
+        .emscripten { display: block; margin: 0 auto; }
+        .controller { margin: 12px auto; text-align: center; }
+        .controls {
+            font-family: inherit;
+            font-size: 1.1rem;
+            min-height: 36px;
+            margin: 4px 0;
+            width: 100%;
+            background: var(--panel);
+            color: var(--fg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 6px 12px;
+        }
+        .controls:active { background: var(--border); }
+        .spinner {
+            height: 50px; width: 50px;
+            margin: 24px auto;
+            animation: rotation 0.8s linear infinite;
+            border-left: 10px solid rgb(0,150,240);
+            border-right: 10px solid rgb(0,150,240);
+            border-bottom: 10px solid rgb(0,150,240);
+            border-top: 10px solid rgb(100,0,200);
+            border-radius: 100%;
+            background-color: rgb(200,100,250);
+        }
+        @keyframes rotation {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        #status { margin: 8px 0; min-height: 1.2em; opacity: 0.8; }
+        footer {
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 Tetris</h1>
+        <a href="https://github.com/calebe94/tetris" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+    </header>
+    <main>
+        <figure style="overflow: visible" id="spinner">
+            <div class="spinner"></div>
+        </figure>
+        <div class="emscripten">
+            <progress value="0" max="100" id="progress" hidden="1"></progress>
+        </div>
+        <div class="canvas_wrapper">
+            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+        </div>
+        <div class="controller">
+            <button class="controls" data-key="ArrowUp" data-which="38">⇧ Rotate</button>
+            <button class="controls" data-key=" " data-which="32">⏸ Start / Pause</button>
+            <button class="controls" data-key="ArrowDown" data-which="40">⇩ Soft Drop</button>
+        </div>
+        <textarea class="emscripten" id="output" rows="8"></textarea>
+        <div class="emscripten" id="status">Downloading...</div>
+    </main>
+    <footer>
+        Built with C++/SDL2 + Emscripten ·
+        <a href="https://github.com/calebe94/tetris/releases" target="_blank" rel="noopener noreferrer">Releases</a>
+    </footer>
+    <script type="text/javascript">
+        var statusElement = document.getElementById('status');
+        var progressElement = document.getElementById('progress');
+        var spinnerElement = document.getElementById('spinner');
+
+        var Module = {
+            preRun: [],
+            postRun: [],
+            print: (function () {
+                var element = document.getElementById('output');
+                if (element) element.value = '';
+                return function (text) {
+                    if (arguments.length > 1)
+                        text = Array.prototype.slice.call(arguments).join(' ');
+                    console.log(text);
+                    if (element) {
+                        element.value += text + '\n';
+                        element.scrollTop = element.scrollHeight;
+                    }
+                };
+            })(),
+            printErr: function (text) {
+                if (arguments.length > 1)
+                    text = Array.prototype.slice.call(arguments).join(' ');
+                console.error(text);
+            },
+            canvas: (function () {
+                var canvas = document.getElementById('canvas');
+                canvas.addEventListener(
+                    'webglcontextlost',
+                    function (e) {
+                        alert('WebGL context lost. You will need to reload the page.');
+                        e.preventDefault();
+                    },
+                    false
+                );
+                return canvas;
+            })(),
+            setStatus: function (text) {
+                if (!Module.setStatus.last)
+                    Module.setStatus.last = { time: Date.now(), text: '' };
+                if (text === Module.setStatus.last.text) return;
+                var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+                var now = Date.now();
+                if (m && now - Module.setStatus.last.time < 30) return;
+                Module.setStatus.last.time = now;
+                Module.setStatus.last.text = text;
+                if (m) {
+                    text = m[1];
+                    progressElement.value = parseInt(m[2]) * 100;
+                    progressElement.max = parseInt(m[4]) * 100;
+                    progressElement.hidden = false;
+                    spinnerElement.hidden = false;
+                } else {
+                    progressElement.value = null;
+                    progressElement.max = null;
+                    progressElement.hidden = true;
+                    if (!text) spinnerElement.hidden = true;
+                }
+                statusElement.innerHTML = text;
+            },
+            totalDependencies: 0,
+            monitorRunDependencies: function (left) {
+                this.totalDependencies = Math.max(
+                    this.totalDependencies,
+                    left
+                );
+                Module.setStatus(
+                    left
+                        ? 'Preparing... (' +
+                              (this.totalDependencies - left) +
+                              '/' +
+                              this.totalDependencies +
+                              ')'
+                        : 'All downloads complete.'
+                );
+            },
+        };
+        Module.setStatus('Downloading...');
+        // Patch TextDecoder.decode to copy resizable ArrayBuffer views into a
+        // fixed-size buffer before decoding. emscripten's HEAPU8 is a view onto
+        // a growable wasm memory buffer, and modern Chrome (130+) rejects
+        // TextDecoder.decode() on resizable ArrayBuffer views. This emscripten
+        // bug bites _emscripten_glShaderSource and breaks the game at startup.
+        // Patching the prototype here (before <script async type="text/javascript" src="index.js"></script> loads) means the
+        // fix survives `make web` rebuilds.
+        (function () {
+          var origDecode = TextDecoder.prototype.decode;
+          TextDecoder.prototype.decode = function (input, options) {
+            if (input && input.buffer && input.buffer.resizable) {
+              var copy = new Uint8Array(input.byteLength);
+              for (var i = 0; i < input.byteLength; i++) copy[i] = input[i];
+              return origDecode.call(this, copy, options);
+            }
+            return origDecode.call(this, input, options);
+          };
+        })();
+        window.onerror = function () {
+            Module.setStatus('Exception thrown, see JavaScript console');
+            spinnerElement.style.display = 'none';
+            Module.setStatus = function (text) {
+                if (text) Module.printErr('[post-exception status] ' + text);
+            };
+        };
+
+        var create_and_fire_event = function (event, type) {
+            var control_event = new Event(type, { bubbles: true });
+            control_event.code = event.target.dataset.key;
+            control_event.key = event.target.dataset.key;
+            control_event.keyCode = event.target.dataset.which;
+            control_event.which = event.target.dataset.which;
+            Module.canvas.dispatchEvent(control_event);
+        };
+
+        Module.postRun.push(function () {
+            Array.from(document.querySelectorAll('.controls')).forEach(
+                function (control) {
+                    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+                        control.addEventListener('touchstart', function (event) {
+                            event.preventDefault(); // Prevent emulated mouse events
+                            create_and_fire_event(event, 'keydown');
+                        });
+                        control.addEventListener('touchend', function (event) {
+                            event.preventDefault(); // Prevent emulated mouse events
+                            create_and_fire_event(event, 'keyup');
+                        });
+                    } else {
+                        control.addEventListener('click', function (event) {
+                            create_and_fire_event(event, 'keydown');
+                            window.setTimeout(function () {
+                                create_and_fire_event(event, 'keyup');
+                            }, 100);
+                        });
+                    }
+                }
+            );
+        });
+    </script>
+    <script async type="text/javascript" src="index.js"></script>
+</body>
+</html>
