@@ -88,7 +88,7 @@
   "devDependencies": {
     "@cspell/dict-pt-br": "^2.4.2",
     "@types/d3": "^7.4.3",
-    "@types/hast": "^3.0.4",
+    "@types/hast": "^3.0.5",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.0.10",
     "@types/pretty-time": "^1.1.5",
