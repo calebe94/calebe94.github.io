@@ -3,22 +3,24 @@
 @media all and ($mobile) {
   .page > #quartz-body {
     // Shift page position when toggling Explorer on mobile.
-    & > :not(.sidebar.left:has(.explorer)) {
+    & > :not(.sidebar.left) {
       transition: transform 300ms ease-in-out;
     }
 
-    &.lock-scroll > :not(.sidebar.left:has(.explorer)) {
+    &.lock-scroll > :not(.sidebar.left) {
       transform: translateX(100%);
       transition: transform 300ms ease-in-out;
     }
 
     // Sticky top bar (stays in place when scrolling down on mobile).
-    .sidebar.left:has(.explorer) {
+    .sidebar.left {
       box-sizing: border-box;
       position: sticky;
+      top: 0;
       background-color: var(--light);
       padding: 1rem 0 1rem 0;
       margin: 0;
+      z-index: 102; /* Ensure the header is above the absolute explorer menu */
     }
 
     .hide-until-loaded ~ .explorer-content {
@@ -69,7 +71,8 @@
 
   @media all and ($mobile) {
     button.mobile-explorer {
-      display: flex;
+      /* Handled in PageTitle globally */
+      display: none;
     }
 
     button.desktop-explorer {
@@ -108,6 +111,25 @@ button.desktop-explorer {
     font-size: 1rem;
     display: inline-block;
     margin: 0;
+  }
+}
+
+.mobile-explorer {
+  margin: 0;
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  .lucide-menu {
+    stroke: var(--darkgray);
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -245,7 +267,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 .explorer {
   @media all and ($mobile) {
     &.collapsed {
-      flex: 0 0 34px;
+      flex: 0 0 auto;
 
       & > .explorer-content {
         transform: translateX(-100%);
@@ -254,7 +276,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     }
 
     &:not(.collapsed) {
-      flex: 0 0 34px;
+      flex: 0 0 auto;
 
       & > .explorer-content {
         transform: translateX(0);
@@ -265,39 +287,24 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     .explorer-content {
       box-sizing: border-box;
       z-index: 100;
-      position: absolute;
+      position: fixed; /* Instead of absolute to take up whole screen relative to viewport */
       top: 0;
       left: 0;
       margin-top: 0;
       background-color: var(--light);
       max-width: 100%;
-      width: 100%;
+      width: 80%; /* Don't take the full width to show the click-to-close area */
+      max-width: 400px; /* Cap width for larger mobile devices */
       transform: translateX(-100%);
       transition:
         transform 200ms ease,
         visibility 200ms ease;
       overflow: hidden;
-      padding: 4rem 0 2rem 0;
+      padding: 5rem 1rem 2rem 1rem; /* Added padding-top to not be under the sticky header */
       height: 100dvh;
       max-height: 100dvh;
       visibility: hidden;
-    }
-
-    .mobile-explorer {
-      margin: 0;
-      padding: 10px; // Aumentado para melhor touch
-      z-index: 101;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .lucide-menu {
-        stroke: var(--darkgray);
-        width: 28px;
-        height: 28px;
-      }
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow to distinguish from background */
     }
   }
 }
@@ -307,5 +314,27 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     .explorer-content > .explorer-ul {
       overscroll-behavior: contain;
     }
+  }
+}
+
+/* Background overlay when mobile explorer is open */
+.explorer-overlay {
+  display: none;
+}
+
+@media all and ($mobile) {
+  .explorer:not(.collapsed) ~ .explorer-overlay,
+  .explorer:not(.collapsed) .explorer-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99; /* Below the explorer (100) but above everything else */
+    pointer-events: auto; /* Capture clicks to close */
+    transition: opacity 200ms ease;
+    cursor: pointer;
   }
 }

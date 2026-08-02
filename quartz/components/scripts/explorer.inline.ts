@@ -20,9 +20,16 @@ type FolderState = {
 }
 
 let currentExplorerState: Array<FolderState>
+
 function toggleExplorer(this: HTMLElement) {
-  const nearestExplorer = this.closest(".explorer") as HTMLElement
+  // If the mobile button was clicked, find the actual explorer container
+  let nearestExplorer = this.closest(".explorer")
+  if (!nearestExplorer) {
+    // If it's the global mobile toggle, find the explorer in the page
+    nearestExplorer = document.querySelector(".explorer")
+  }
   if (!nearestExplorer) return
+  
   const explorerCollapsed = nearestExplorer.classList.toggle("collapsed")
   nearestExplorer.setAttribute(
     "aria-expanded",
@@ -233,13 +240,46 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
 
     // Set up event handlers
-    const explorerButtons = explorer.getElementsByClassName(
-      "explorer-toggle",
-    ) as HTMLCollectionOf<HTMLElement>
-    for (const button of explorerButtons) {
+    // The mobile button is now in PageTitle, so we look for it globally
+    const explorerButtons = document.querySelectorAll(
+      ".explorer-toggle",
+    )
+    for (const button of Array.from(explorerButtons)) {
       button.addEventListener("click", toggleExplorer)
       window.addCleanup(() => button.removeEventListener("click", toggleExplorer))
     }
+
+    // Set up background click to close
+    const setupBackgroundClick = () => {
+      const handleClick = (e: MouseEvent) => {
+        const target = e.target as HTMLElement
+        const isMobile = window.innerWidth <= 800
+        const isExplorerOpen = !explorer.classList.contains("collapsed")
+        
+        if (isMobile && isExplorerOpen) {
+          // If clicked outside the explorer content and not on the toggle button
+          const explorerContent = explorer.querySelector(".explorer-content")
+          const isOutsideExplorer = explorerContent && !explorerContent.contains(target)
+          const isOverlay = target.classList.contains('explorer-overlay')
+          
+          if (isOutsideExplorer && isOverlay) {
+            const toggleFn = toggleExplorer as any
+            const fakeEvent = new Event("click")
+            // Find the global explorer element
+            const globalExplorer = document.querySelector(".explorer")
+            if (globalExplorer) {
+              Object.defineProperty(fakeEvent, 'target', {writable: false, value: globalExplorer})
+              toggleFn.call(globalExplorer, fakeEvent)
+            }
+          }
+        }
+      }
+      
+      document.addEventListener("click", handleClick)
+      // @ts-ignore
+      window.addCleanup(() => document.removeEventListener("click", handleClick))
+    }
+    setupBackgroundClick()
 
     // Set up folder click handlers
     if (opts.folderClickBehavior === "collapse") {
@@ -273,12 +313,13 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
   await setupExplorer(currentSlug)
 
-  // if mobile hamburger is visible, collapse by default
+  // On page load, ALWAYS collapse the explorer if we are on mobile
   for (const explorer of document.getElementsByClassName("explorer")) {
-    const mobileExplorer = explorer.querySelector(".mobile-explorer")
+    const mobileExplorer = document.querySelector(".mobile-explorer")
     if (!mobileExplorer) return
 
-    if (mobileExplorer.checkVisibility()) {
+    // Using window.innerWidth as a more reliable mobile check
+    if (window.innerWidth <= 800) {
       explorer.classList.add("collapsed")
       explorer.setAttribute("aria-expanded", "false")
 
