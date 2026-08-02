@@ -10,10 +10,55 @@ tags:
 
 # Glossary
 
-Technical terms used in blog posts. If you don't know what something means, look it up here.
+Technical terms used in blog posts.
+
+
+## Artificial Intelligence and LLMs
+
+### LLM
+Large Language Model — language model trained at scale to understand and generate text
+
+### MoE
+Mixture of Experts — architecture activating only a fraction of parameters (experts) per token for fast inference
+
+### GGUF
+File format optimized for language model inference in llama.cpp (successor to GGML)
+
+### Reasoning Model
+Model trained to generate explicit reasoning steps (thinking process) before the final output
+
+### Thinking Tokens
+Tokens generated internally by reasoning models before outputting visible text to the user
+
+### Tool Calling
+Model capability to invoke external tools (scripts, web search, file reads) in a structured format
+
+### Metal
+Apple low-level graphics and GPU compute API for macOS and iOS
+
+### KV Cache
+Mechanism storing Key/Value vectors of previous tokens to speed up context processing
+
+### BYOK
+Bring Your Own Key — usage model where you provide your own API key to pay for direct consumption
+
+### OpenRouter
+Aggregator service unifying access and routing to dozens of LLM providers
+
+
+## Systems and macOS
+
+### daemon
+Background process running continuously on the operating system without a direct GUI
+
+### launchd
+Native macOS service and daemon manager (equivalent to systemd in Linux)
+
+### plist
+Property List — XML or binary file format used by macOS for service and app configurations
+
 
 ## Guitar and Audio
-
 ### Plexi
 Nickname for the Marshall Super Lead, a '60s tube amp that defined the British rock sound
 

@@ -13,6 +13,51 @@ tags:
 Termos técnicos usados nos posts do blog. Se você não sabe o que algo significa, procure aqui.
 
 
+## Inteligência Artificial e LLMs
+
+### LLM
+Large Language Model — modelo de linguagem treinado em grande escala para entender e gerar texto
+
+### MoE
+Mixture of Experts — arquitetura que ativa apenas uma fração dos parâmetros (especialistas) por token, mantendo inferência rápida
+
+### GGUF
+Formato de arquivo otimizado para inferência de modelos de linguagem no llama.cpp (sucessor do GGML)
+
+### Reasoning Model
+Modelo treinado para gerar raciocínio explícito em texto (thinking process) antes da resposta final
+
+### Thinking Tokens
+Tokens gerados internamente por modelos de raciocínio antes de emitir a resposta visível ao usuário
+
+### Tool Calling
+Capacidade do modelo de invocar ferramentas externas (executar scripts, buscar na web, ler arquivos) de forma estruturada
+
+### Metal
+API de aceleração gráfica de baixo nível e computação de GPU da Apple para macOS e iOS
+
+### KV Cache
+Mecanismo que armazena os vetores Key/Value de tokens anteriores para acelerar o processamento do contexto
+
+### BYOK
+Bring Your Own Key — modelo de uso onde você fornece sua própria chave de API para pagar pelo consumo direto
+
+### OpenRouter
+Serviço agregador que unifica o acesso e o roteamento para dezenas de provedores de LLMs
+
+
+## Sistemas e macOS
+
+### daemon
+Processo de segundo plano que roda continuamente no sistema operacional sem interface gráfica direta
+
+### launchd
+Gerenciador de serviços e daemons nativo do macOS (equivalente ao systemd no Linux)
+
+### plist
+Property List — formato de arquivo XML ou binário usado pelo macOS para configurações de serviços e apps
+
+
 ## Guitarra e áudio
 
 ### Plexi
