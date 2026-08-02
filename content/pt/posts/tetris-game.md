@@ -11,8 +11,10 @@ tags:
 No mundo do desenvolvimento de jogos, Tetris é um clássico que dispensa apresentações. Sua jogabilidade simples, porém viciante, cativou jogadores por décadas. Neste post, levaremos você a uma jornada pelo processo de criação de um jogo Tetris em C++ usando a biblioteca SDL2 e exploraremos como levar esse jogo para a web usando WebAssembly. Vamos abordar os passos e conceitos-chave, desde a configuração do ambiente de desenvolvimento até a implementação da mecânica do jogo e das interfaces de usuário.
 
 <center>
-<a href="/tetris/"><img src="https://raw.githubusercontent.com/Calebe94/tetris/main/assets/screenshots/game.png" width="500px"></a>
-<p><h4><a href="/tetris/">🎮 JOGAR! 🎮</a></h4></p>
+<iframe src="/static/tetris.html"
+        style="width:100%;max-width:720px;height:80vh;border:1px solid #333;border-radius:8px;background:#000;"
+        allow="autoplay" allowfullscreen></iframe>
+<p><h4><a href="/static/tetris.html">🎮 TELA CHEIA 🎮</a></h4></p>
 </center>
 
 
