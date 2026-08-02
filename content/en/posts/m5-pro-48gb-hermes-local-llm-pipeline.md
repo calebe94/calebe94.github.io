@@ -39,7 +39,7 @@ The table above shows the **marginal** cost of the [LLM](/en/notes/glossary#LLM)
 - **[OpenRouter](/en/notes/glossary#OpenRouter) [BYOK](/en/notes/glossary#BYOK):** I top up about $40 every 3 months to use Gemini via [BYOK](/en/notes/glossary#BYOK) on [OpenRouter](https://openrouter.ai/). It's an occasional pay-as-you-go charge that covers deep research and long-context sessions.
 - **Ollama Cloud:** $20/month, which used to blow past limits halfway through the month and freeze everything.
 
-The marginal cost of **~R$17/month** in the new pipeline comes down to an optimized Ollama Cloud usage (which no longer runs out of tokens) plus OpenRouter top-ups spread across several months. Google AI Pro and Claude Pro are costs I already had (or pay $0 for), so they don't count as new expenses. The real savings come from stopping the wasteful burn of extra credits and token-priced APIs for every single task.
+The marginal cost of **~R\$17/month** in the new pipeline comes down to an optimized Ollama Cloud usage (which no longer runs out of tokens) plus OpenRouter top-ups spread across several months. Google AI Pro and Claude Pro are costs I already had (or pay $0 for), so they don't count as new expenses. The real savings come from stopping the wasteful burn of extra credits and token-priced APIs for every single task.
 
 ## The Real Reason: It's Not Just Savings, It's Sovereignty
 
