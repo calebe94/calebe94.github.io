@@ -11,8 +11,6 @@ tags:
   - opensource
 ---
 
-# Como aposentei R$200/mês de LLM Cloud com um M5 Pro 48GB e um pipeline híbrido com Claude, Gemini e Ollama
-
 Se você usa agentes autônomos no terminal como o [Hermes Agent](https://hermes-agent.nousresearch.com/docs) para automação diária, sabe que o maior gargalo não é a capacidade da IA — é o saldo da sua conta.
 
 Recentemente eu me vi preso num ciclo frustrante: uma assinatura de $20/mês no [Ollama Cloud](https://ollama.com/cloud) que estourava o limite de créditos no meio da semana. Minhas automações de Kanban, summarizers de journal e cron jobs de background paravam de funcionar do nada com o famigerado erro `HTTP 402: Payment Required`. Tasks ficavam marcadas como `(no response)` no board, e o meu agente ficava cego.

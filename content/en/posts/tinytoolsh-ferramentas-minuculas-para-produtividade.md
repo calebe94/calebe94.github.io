@@ -8,8 +8,6 @@ tags:
   - shell
 ---
 
-# TinyToolSH: Tiny tools to boost your productivity
-
 [Gabo](https://github.com/gbgabo) and I share a very similar philosophy when it comes to software: small things that do one thing really well. It's no coincidence we're fans of the [suckless philosophy](https://suckless.org/philosophy/).
 
 Sometime in 2020 we started writing small `shell` scripts to automate boring day-to-day tasks. Simple things: a `dmenu` wrapper for creating Markdown notes, a terminal pomodoro timer, a script that downloads satellite images from [GOES](https://www.star.nesdis.noaa.gov/GOES/) and sets them as wallpaper.

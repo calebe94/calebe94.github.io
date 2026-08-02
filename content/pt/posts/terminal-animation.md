@@ -9,8 +9,6 @@ tags:
   - animation
 ---
 
-# Criando uma Animação CSS Estilo Terminal
-
 No mundo do desenvolvimento web, a criatividade não tem limites. Às vezes, são os pequenos detalhes que fazem um site se destacar. Neste post, vamos levá-lo a uma jornada pelo processo de criação de uma animação CSS estilo terminal, completa com um efeito de digitação e um cursor piscante. Essa animação chamativa pode ser uma adição única ao seu site. Vamos lá!
 
 ## Planejando a Animação

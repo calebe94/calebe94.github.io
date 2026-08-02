@@ -8,8 +8,6 @@ tags:
   - c
 ---
 
-# 🎮 Building Tetris in C++ with SDL2 and WebAssembly 🚀
-
 In the world of game development, Tetris is a classic that needs no introduction. Its simple yet addictive gameplay has captivated players for decades. In this post, I'll take you on a journey through the process of creating a Tetris game in C++ using the SDL2 library and explore how to bring this game to the web using WebAssembly. We'll cover the key steps and concepts, from setting up the development environment to implementing the game mechanics and user interfaces.
 
 <center>

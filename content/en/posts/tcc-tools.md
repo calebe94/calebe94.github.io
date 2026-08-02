@@ -8,8 +8,6 @@ tags:
   - compression
 ---
 
-# Essential Tools for Developing Your Final Year Project 🛠️📚
-
 The journey of creating your Final Year Project (TCC — Trabalho de Conclusão de Curso) can be challenging, but with the right tools, you can make this process smoother and more productive. Here is a list of essential tools that cover everything from research to final formatting, with a touch of emojis to liven up your academic journey! 🚀🎓
 
 **1. [Zotero](https://www.zotero.org/) or [Mendeley](https://www.mendeley.com/) (Reference Management) 📑🧐:** These tools help you organize and manage your bibliographic references, making it easier to cite sources and build your reference list according to ABNT standards.

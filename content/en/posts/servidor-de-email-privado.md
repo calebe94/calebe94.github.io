@@ -8,8 +8,6 @@ tags:
   - email
 ---
 
-# Self-hosted email server
-
 ### `The saga of frustration`
 
 As I mentioned in a [[em-busca-de-uma-interface-git|previous post]], I have a [Yunohost] instance running on my VPS. [Yunohost] makes it incredibly easy to install your "web" apps on your server and comes with some handy tools to manage everything. One of those tools is the email server, which notifies you if any errors occur during server diagnostics.

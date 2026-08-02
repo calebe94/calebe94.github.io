@@ -8,8 +8,6 @@ tags:
   - git
 ---
 
-# Em busca de uma interface git self-hosted
-
 Estive em busca de uma interface `git` para hospedar os meus projetos em meu próprio servidor, para de certa forma servir de meu portifólio.
 
 Eu já tinha conhecimento de que o [gitlab] permite que os usuários criem a sua própria instância(self-host) em seus servidores, e eu mesmo já hospedei uma instância do [gitlab] em minha VPS.

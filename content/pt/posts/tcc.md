@@ -9,8 +9,6 @@ tags:
   - tcc
 ---
 
-# Desvendando a Eficiência das Técnicas de Compressão de Dados em Dispositivos IoT
-
 A jornada acadêmica rumo à conclusão do Trabalho de Conclusão de Curso (TCC) é uma experiência desafiadora e recompensadora. Ao longo desse percurso, é fundamental escolher um tema que não apenas desperte seu interesse, mas também tenha relevância no contexto atual. No meu caso, a escolha recaiu sobre um tema que está no epicentro da revolução tecnológica: a "Eficiência das Técnicas de Compressão de Dados em Dispositivos IoT com Recursos Limitados".
 
 A Internet das Coisas (IoT) é uma realidade que se desdobra diante de nós, conectando dispositivos, sensores e sistemas em uma rede global. Ela tem o potencial de transformar nossas vidas e nossas cidades, tornando-as mais inteligentes e eficientes. No entanto, essa explosão de dispositivos IoT traz consigo desafios significativos, especialmente quando se trata de gerenciamento de dados.

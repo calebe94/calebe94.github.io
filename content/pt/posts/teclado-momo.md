@@ -9,8 +9,6 @@ tags:
   - qmk
 ---
 
-# Minha Jornada de Criação do Teclado Mecânico Momo
-
 <center>
 <img src="https://cloud.calebe.dev.br/apps/files_sharing/publicpreview/bSA9yGCm7WqrWX2?file=/&fileId=122528&x=3840&y=2160&a=true" width="70%">
 </center>

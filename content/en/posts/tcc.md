@@ -8,8 +8,6 @@ tags:
   - tcc
 ---
 
-# Unveiling the Efficiency of Data Compression Techniques in IoT Devices
-
 The academic journey toward completing a Final Year Project (TCC) is a challenging and rewarding experience. Along this path, it is essential to choose a theme that not only sparks your interest but also holds relevance in the current context. In my case, the choice fell upon a theme at the epicenter of the technological revolution: the "Efficiency of Data Compression Techniques in Resource-Constrained IoT Devices."
 
 The Internet of Things (IoT) is a reality unfolding before us, connecting devices, sensors, and systems in a global network. It has the potential to transform our lives and our cities, making them smarter and more efficient. However, this explosion of IoT devices brings significant challenges, especially when it comes to data management.

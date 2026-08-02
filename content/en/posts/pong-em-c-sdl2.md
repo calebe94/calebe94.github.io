@@ -9,8 +9,6 @@ tags:
   - sdl2
 ---
 
-# Building the Classic Pong in C with SDL2
-
 I've always been fascinated by the classics — and Pong is THE classic. The game that started it all, defined the sports genre, and still holds up as a perfect starting point for anyone wanting to dip their toes into game development. So I decided to build it myself in C using SDL2 — and you can too!
 
 <center>

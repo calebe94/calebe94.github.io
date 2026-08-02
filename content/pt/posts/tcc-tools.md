@@ -8,8 +8,6 @@ tags:
   - compression
 ---
 
-# Ferramentas Essenciais para o Desenvolvimento do seu TCC 🛠️📚
-
 A jornada de criar o seu Trabalho de Conclusão de Curso (TCC) pode ser desafiadora, mas com as ferramentas certas, você pode tornar esse processo mais suave e produtivo. Aqui está uma lista de ferramentas essenciais que vão desde a pesquisa até a formatação final, com um toque de emojis para animar sua jornada acadêmica! 🚀🎓
 
 **1. [Zotero](https://www.zotero.org/) ou [Mendeley](https://www.mendeley.com/) (Gerenciamento de Referências) 📑🧐:** Essas ferramentas ajudam a organizar e gerenciar suas referências bibliográficas, facilitando a citação e a criação da lista de referências de acordo com as normas da ABNT.

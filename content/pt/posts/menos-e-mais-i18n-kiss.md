@@ -9,8 +9,6 @@ tags:
   - i18n
 ---
 
-# Menos é mais: refatorando o i18n do blog com KISS e filosofia Unix
-
 Se você já tentou manter um site em dois idiomas, sabe que a parte mais chata não é traduzir o conteúdo — é a infraestrutura. Onde colocar os arquivos? Como fazer o toggle? O que fazer com os links antigos quando você muda tudo de lugar?
 
 Eu vinha empurrando esses problemas com a barriga desde que migrei o blog do Astro Cactus pro Quartz 4. Funcionava, mas era feio. E eu sou o tipo de pessoa que se incomoda com coisa feia.

@@ -9,8 +9,6 @@ tags:
   - qmk
 ---
 
-# APPA Keyboard
-
 In my second-to-last blog post I covered [how to build your own mechanical keyboard](https://blog.calebe.dev.br/posts/construindo-um-teclado-mecanico.html).
 
 In this post I'll describe the process of building my mechanical keyboard, which I called [Appa].
