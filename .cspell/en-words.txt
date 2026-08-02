@@ -1,7 +1,7 @@
-# English technical and project-specific terms
-# not covered by the base en_US / software-terms dictionaries
-# Sorted alphabetically; one word/term per line
 
+# English technical and project-specific terms
+# Sorted alphabetically; one word/term per line
+# not covered by the base en_US / software-terms dictionaries
 Darkmode
 EMCC
 EMFLAGS
@@ -14,14 +14,14 @@ Menuconfig
 Microcontroller
 Microcontrollers
 NOAA's
-Nextcloud
 Nav
 Navi
+Nextcloud
 Pomodoro
 Tetris
 Zener
-Zenner
 Zener
+Zenner
 asyncio
 autoplay
 buzzy
@@ -34,9 +34,9 @@ fanalyzer
 foospidy
 footswitch
 footswitches
-hsgw
 hidraw
 hotswap
+hsgw
 imgui
 infographics
 langtoggle
@@ -89,4 +89,4 @@ woodyamsterdam
 xhci
 zathura
 zener
-zuko
+zukoNeurodivergence

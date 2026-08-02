@@ -7,6 +7,7 @@ APPA
 ATMEGA
 Aang
 Aang's
+Aeroparque
 Airbender
 Akko
 Akko's
@@ -14,8 +15,12 @@ Aliexpress
 Appa
 Atmel
 BYOK
+Bombonera
+Caminito
 Canva
+Cavezalle
 Celestion
+Centenario
 Citavi
 Copyscape
 Crinacle
@@ -23,6 +28,7 @@ Crinbacle
 Demucs
 Didodos
 Edimar
+Electrónico
 Emscripten
 Evernote
 Footswitch
@@ -49,6 +55,8 @@ MOMO
 MOSI
 Magalu
 Mosrite
+Neurodivergence
+Newbery
 Nuklear
 ODROID
 ODROID's
@@ -70,6 +78,7 @@ Ramone's
 Ramones
 Redragon
 Rogerinho
+Román
 Runoffgroove
 Ryzen
 SCLK

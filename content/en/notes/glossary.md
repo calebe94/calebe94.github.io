@@ -1,96 +1,96 @@
 ---
-title: "Glossary"
-description: "Glossary of technical terms used in blog posts"
+title: "Glossário"
+description: "Glossary of technical terms used in the blog posts"
 date: "2026-07-31 00:45:00"
 tags:
   - EN_US
-  - glossary
+  - glossario
   - reference
 ---
 
 # Glossary
 
-Technical terms used in blog posts.
+Technical terms used in the blog posts. If you don't know what something means, look for it here.
 
-
-## Artificial Intelligence and LLMs
+## General AI and LLMs
 
 ### LLM
-Large Language Model — language model trained at scale to understand and generate text
+Large Language Model — language model trained on a large scale to understand and generate text
 
 ### MoE
-Mixture of Experts — architecture activating only a fraction of parameters (experts) per token for fast inference
+Mixture of Experts — architecture that activates only a fraction of parameters (experts) per token, keeping inference fast
 
 ### GGUF
-File format optimized for language model inference in llama.cpp (successor to GGML)
+Optimized file format for language model inference in llama.cpp (successor to GGML)
 
 ### Reasoning Model
-Model trained to generate explicit reasoning steps (thinking process) before the final output
+Model trained to generate explicit reasoning in text (thinking process) before the final answer
 
 ### Thinking Tokens
-Tokens generated internally by reasoning models before outputting visible text to the user
+Tokens generated internally by reasoning models before outputting the user-visible response
 
 ### Tool Calling
-Model capability to invoke external tools (scripts, web search, file reads) in a structured format
+The model's ability to invoke external tools (run scripts, search the web, read files) in a structured way
 
 ### Metal
-Apple low-level graphics and GPU compute API for macOS and iOS
+Low-level graphics and GPU compute API by Apple for macOS and iOS
 
 ### KV Cache
-Mechanism storing Key/Value vectors of previous tokens to speed up context processing
+Mechanism that stores Key/Value vectors from previous tokens to speed up context processing
 
 ### BYOK
 Bring Your Own Key — usage model where you provide your own API key to pay for direct consumption
 
 ### OpenRouter
-Aggregator service unifying access and routing to dozens of LLM providers
+Aggregator service that unifies access and routing to dozens of LLM providers
 
 
 ## Systems and macOS
 
 ### daemon
-Background process running continuously on the operating system without a direct GUI
+Background process that runs continuously on the OS without a direct graphical interface
 
 ### launchd
-Native macOS service and daemon manager (equivalent to systemd in Linux)
+Native service and daemon manager for macOS (equivalent to systemd on Linux)
 
 ### plist
 Property List — XML or binary file format used by macOS for service and app configurations
 
 
-## Guitar and Audio
+## Guitar and audio
+
 ### Plexi
-Nickname for the Marshall Super Lead, a '60s tube amp that defined the British rock sound
+Nickname for the Marshall Super Lead, the '60s tube amp that defined the British rock sound
 
 ### JCM800
-Marshall '80s version, same topology as the Plexi with more gain
+The '80s version of Marshall, same topology as the Plexi with more gain
 
 ### 1960A
-Marshall 4x12 cabinet (4 x 12-inch speakers), the rock standard
+Marshall 4x12 cabinet (4 12-inch speakers), the rock standard
 
 ### Greenback
-Celestion G12M-25, a 25W speaker with warm, creamy midrange
+Celestion G12M-25, 25W speaker with a warm and creamy midrange
 
 ### Preamp
-Preamplifier — the stage that adds gain and saturation to the guitar signal
+Preamplifier — stage that provides gain and saturation to the guitar signal
 
 ### Cab
-Cabinet — the speaker enclosure the amp connects to
+Cabinet — speaker box where the amp is connected
 
 ### Cranked
-Amp with volume maxed out, naturally saturating
+Amp with the volume at max, saturating naturally
 
 ### Scooped mids
-Midrange frequencies attenuated — a "hollow," aggressive sound
+Attenuated mid frequencies — "hollow" and aggressive sound
 
 ### Twang
-Bright, dry sound with more treble and less bass
+Bright and dry sound, with more treble and less bass
 
 ### Tone stack
 EQ (equalization) circuit of an amp or pedal
 
 ### FMV
-Passive 3-knob tone stack format (Bass/Mid/Treble), used by Fender, Marshall, and Vox
+Passive 3-knob tone stack format (Bass/Mid/Treble) used by Fender, Marshall, and Vox
 
 ### Presence
 Treble control via negative feedback from the power amp
@@ -99,7 +99,7 @@ Treble control via negative feedback from the power amp
 Gain increase — usually an extra saturation stage for solos
 
 ### Channel switch
-Switching between two amp channels (or pedals with 2 voicings)
+Toggle between two amp channels (or pedals with 2 voices)
 
 ### Downstrokes
 Picking technique using only downward strokes — Johnny Ramone's signature
@@ -108,21 +108,22 @@ Picking technique using only downward strokes — Johnny Ramone's signature
 Japanese guitar brand used by Johnny Ramone (Mosrite Ventures II)
 
 ### Bridge pickup
-Pickup near the guitar's bridge — brighter, more aggressive sound
+Pickup (microphone) closest to the guitar's bridge — more aggressive and brighter sound
+
 
 ## Electronics
 
 ### JFET
-Junction Field-Effect Transistor — transistor with response similar to a vacuum tube
+Junction Field-Effect Transistor — transistor with a response similar to a vacuum tube
 
 ### 12AX7
-Preamplifier tube used in the Plexi (3 gain stages)
+Preamp tube used in the Plexi (3 gain stages)
 
 ### EL34
-Power tube used in the Marshall Plexi's power amp
+Power tube used in the Marshall Plexi power amp
 
 ### mu-amp
-Configuration of 2 JFETs that emulates the push-pull of a tube power amp
+2-JFET configuration that emulates the push-pull of a tube power amp
 
 ### Push-pull
 Final amp stage where 2 tubes work in opposition to generate power
@@ -134,10 +135,10 @@ Operational amplifier — IC that amplifies a signal with controllable gain
 General-purpose op-amp, low noise, FET input — standard in DIY pedals
 
 ### Trimpot
-Adjustable potentiometer turned with a screwdriver — used to bias JFETs
+Adjustable potentiometer with a screwdriver — used to bias JFETs
 
 ### Bias
-Adjusting the operating point of a transistor/tube — affects the sound
+Adjustment of the operating point of a transistor/tube — affects the sound
 
 ### PCB
 Printed Circuit Board
@@ -149,47 +150,49 @@ Perforated board for circuit assembly (no traces, uses wires)
 Solderless breadboard — for testing circuits before soldering
 
 ### Diodo Zenner
-Zener diode — a diode that regulates voltage, conducting in reverse at a fixed voltage
+Zener diode, a diode that regulates voltage — conducts in the reverse direction at a fixed voltage
 
 ### PTH
-Plated Through-Hole — components with leads that pass through the PCB
+Plated Through-Hole — components with legs that go through the PCB
 
 ### Tântalo
-Tantalum — a type of electrolytic capacitor, smaller and more stable than aluminum
+Tantalum electrolytic capacitor type — smaller and more stable than aluminum
 
-## Pedals and Effects
+
+## Pedals and effects
 
 ### True Bypass
-Signal passes straight from input to output without going through the circuit when the pedal is off
+Signal goes straight from input to output without passing through the circuit when the pedal is off
 
 ### 3PDT
-Triple Pole Double Throw — footswitch that switches 3 circuits simultaneously
+Triple Pole Double Throw — footswitch that toggles 3 circuits simultaneously
 
 ### Footswitch
 Pedal button pressed with the foot to turn effects on/off
 
 ### TS 1/4"
-1/4" (6.35mm) Tip-Sleeve jack — standard guitar connector
+6.35mm TS (Tip-Sleeve) jack, standard guitar connector
 
 ### TRS 1/4"
-1/4" (6.35mm) Tip-Ring-Sleeve stereo jack — used for balanced or stereo signals
+6.35mm stereo jack (Tip-Ring-Sleeve) — used for balanced or stereo signals
 
 ### DC 9V
 9-volt power supply — standard for guitar pedals
 
 ### LED
-Light Emitting Diode — visual status indicator on a pedal
+Light Emitting Diode — visual status indicator for the pedal
 
 ### Stompbox
 Another name for a guitar effects pedal
 
-## Digital Audio
+
+## Digital audio
 
 ### IR (Impulse Response)
-Digital "impression" of a cabinet + speaker + microphone response (a .wav file)
+"Fingerprint" of the response of a cabinet + speaker + microphone (.wav file)
 
 ### Convolução
-Convolution — mathematical operation that applies the IR response to the audio signal
+Mathematical operation that applies the IR response to the audio signal
 
 ### IR Loader
 Device or software that loads and applies IRs in real time
@@ -198,10 +201,10 @@ Device or software that loads and applies IRs in real time
 Device that converts analog audio to digital via USB (and vice versa)
 
 ### ADC
-Analog-to-Digital Converter — converts an analog signal to digital
+Analog-to-Digital Converter — converts analog signal to digital
 
 ### DAC
-Digital-to-Analog Converter — converts a digital signal to analog
+Digital-to-Analog Converter — converts digital signal to analog
 
 ### Balanced (XLR)
 Balanced signal — 2 signals (hot+cold) + ground, rejects noise in long cables
@@ -209,13 +212,14 @@ Balanced signal — 2 signals (hot+cold) + ground, rejects noise in long cables
 ### Unbalanced (RCA/TS)
 Unbalanced signal — 1 signal + ground, susceptible to noise in long cables
 
-## Open Source and DIY
+
+## Open source and DIY
 
 ### Open hardware
 Hardware with public schematics, PCB, and BOM — anyone can build it
 
 ### CC BY-NC-SA 3.0
-Creative Commons Attribution-NonCommercial-ShareAlike — use/modify/share allowed, selling is not
+Creative Commons Attribution-NonCommercial-ShareAlike — can use/modify/share, cannot sell
 
 ### AIAB
 Amp In A Box — pedal that emulates a complete tube amp
@@ -224,7 +228,7 @@ Amp In A Box — pedal that emulates a complete tube amp
 Do It Yourself
 
 ### BOM
-Bill of Materials — component list with prices
+Bill of Materials — list of components with prices
 
 ### Runoffgroove
 Site with open hardware pedal circuits (tubes-to-FETs)
@@ -232,48 +236,50 @@ Site with open hardware pedal circuits (tubes-to-FETs)
 ### Zuko
 Pedal name — the fire prince from Avatar: The Last Airbender. Fire = saturation, duality = 2 channels
 
-## Stem Separation (Phase 3+)
+
+## Stem separation (Phase 3+)
 
 ### Stem separation
-Separating an audio mix into individual tracks (vocals, drums, bass, guitar)
+Separating an audio mix into individual tracks (vocal, drums, bass, guitar)
 
 ### Demucs
-AI model from Meta/Facebook for stem separation
+Meta/Facebook AI model for stem separation
 
 ### RTF
-Real-Time Factor — how long the processor takes to process 1s of audio
+Real-Time Factor — how much time the processor takes to process 1s of audio
 
 ### Backing track
-Accompaniment track (music without one instrument, e.g., without guitar)
+Accompaniment track (music without an instrument, e.g., without guitar)
 
-## Mechanical Keyboards
+
+## Mechanical keyboards
 
 ### Switch
 Individual mechanism under each key — defines typing feel and sound
 
 ### Cherry MX
-Most common mechanical switch standard — varieties Red, Brown, Blue, etc
+Most common mechanical switch standard — Red, Brown, Blue varieties, etc.
 
 ### ALPS
-Older type of mechanical switch — tactile and hard to find today
+Older mechanical switch type — tactile and hard to find today
 
 ### Keycap
-Plastic cap that sits on the switch — the part you touch
+Plastic cover that goes over the switch — the part you touch
 
 ### Keycap profile
-Keycap shape/height (SA, DSA, XDA, Cherry) — affects ergonomics and appearance
+Shape/height of the keycaps (SA, DSA, XDA, Cherry) — affects ergonomics and visuals
 
 ### Plate
-Metal plate where switches mount — the keyboard's structure
+Metal plate where the switches snap in — keyboard structure
 
 ### Case
-Keyboard housing — contains PCB, plate, and switches
+Keyboard enclosure — houses PCB, plate, and switches
 
 ### Sandwich case
-Case made of layered (acrylic/MDF) sheets bolted together
+Case made of overlapping layers (acrylic/MDF) screwed together
 
 ### Handwired
-Keyboard built by soldering switches with wires directly to the microcontroller (no PCB)
+Keyboard built by soldering switches with wires straight to the microcontroller (no PCB)
 
 ### Hotswap
 Sockets that allow swapping switches without soldering
@@ -282,13 +288,13 @@ Sockets that allow swapping switches without soldering
 Mechanism that stabilizes large keys (Space, Enter, Shift)
 
 ### Costar
-Type of stabilizer with a metal bar and hooks
+Stabilizer type with a metal wire and hooks
 
 ### Underglow
-LEDs on the underside of the keyboard — lighting visible through a translucent case
+LEDs on the bottom of the keyboard — lighting that shines through a translucent case
 
 ### Backlight
-LEDs under each key — illuminate keycaps from below
+LEDs under each key — illuminate the keycaps from below
 
 ### QMK
 Quantum Mechanical Keyboard — open source firmware for custom keyboards
@@ -297,19 +303,19 @@ Quantum Mechanical Keyboard — open source firmware for custom keyboards
 Program that allows flashing firmware to the microcontroller via USB
 
 ### HID
-Human Interface Device — USB class that makes a PC recognize a keyboard/mouse
+Human Interface Device — USB class that makes the PC recognize the keyboard/mouse
 
 ### ATMEGA328
-8-bit AVR microcontroller from Atmel — the brain of the Arduino Pro Mini
+Atmel 8-bit AVR microcontroller — brain of the Arduino Pro Mini
 
 ### RP2040
-ARM Cortex M0+ microcontroller from Raspberry Pi — 133MHz, 264kB RAM
+Raspberry Pi ARM Cortex M0+ microcontroller — 133MHz, 264kB RAM
 
 ### AVR
-Family of 8-bit microcontrollers from Atmel/Microchip
+Atmel/Microchip 8-bit microcontroller family
 
 ### USBaspLoader
-V-USB bootloader that emulates USB on AVR without native USB hardware
+V-USB bootloader that emulates USB on AVR without a native USB peripheral
 
 ### USBAsp
 External programmer for flashing AVR microcontrollers
@@ -324,7 +330,7 @@ ATMEGA328 circuit built without the Arduino board (just the chip + crystal)
 Addressable RGB LED — each LED has its own address on the strip
 
 ### SK6812
-Addressable RGB LED, smaller than WS2812B — fits under keys
+Addressable RGB LED smaller than the WS2812B — fits under the keys
 
 ### 6028R
 RGB LED with 3 separate channels (R/G/B) in one package
@@ -336,21 +342,22 @@ Web tool that generates keyboard case files from a layout
 Web tool for designing keyboard layouts
 
 ### 40percent.club
-Site with compact keyboard projects (40% of keys)
+Site with compact keyboard projects (40% of the keys)
 
 ### Gherkin
-40% (3x10) open source keyboard from 40percent.club
+40% keyboard (3x10) open source from 40percent.club
 
 ### Plaid
 48-key open source keyboard with ATMEGA328 and USBaspLoader
 
-## Git and Servers
+
+## Git and servers
 
 ### Self-hosted
 Software hosted on your own server instead of a third-party service
 
 ### VPS
-Virtual Private Server — a virtual server you rent
+Virtual Private Server — virtual server you rent
 
 ### CGI
 Common Gateway Interface — runs programs on the web server to generate pages
@@ -362,30 +369,31 @@ Web interface for git repositories, in C, runs via CGI
 Static page generator for git repositories
 
 ### Merge Request
-In GitLab, the equivalent of a GitHub Pull Request
+In Gitlab, equivalent to Github's Pull Request
 
 ### Pull Request
-Proposal to merge one branch into another on GitHub
+Proposal to merge a branch into another on Github
 
 ### Mirror
 Automatic copy of a repository between servers
 
 ### systemd
-Service manager (init) standard on Linux
+Default service manager (init) in Linux
 
 ### journalctl
-Command to query systemd logs
+Command that queries systemd logs
 
 ### Suckless
 Minimalist software philosophy — small programs that do one thing well
 
-## Game Development
+
+## Game development
 
 ### SDL2
 Simple DirectMedia Layer 2 — C library for 2D graphics, audio, and input
 
 ### Engine
-Framework that abstracts the game loop, rendering, physics, etc
+Framework that abstracts game loop, rendering, physics, etc.
 
 ### Game loop
 Main cycle: input → update → render, repeated every frame
@@ -394,13 +402,13 @@ Main cycle: input → update → render, repeated every frame
 Open source game engine, in C++, with GDScript/GDNative
 
 ### GDNative
-Godot's interface for C/C++ extensions (and other languages)
+Godot's interface for C/C++ (and other languages) extensions
 
 ### Tetrominó
 Tetris piece — 4 blocks in an arrangement (I, O, T, S, Z, L, J)
 
 ### Dear ImGui
-C++ immediate-mode UI library — menus and debug overlays
+Immediate mode C++ UI library — menus and debug overlays
 
 ### WebAssembly
 Binary format that runs C/C++ in the browser at near-native speed
@@ -412,62 +420,64 @@ LLVM → WebAssembly compiler — brings C/C++ code to the web
 Free and Open Source Software
 
 ### Análise estática
-Static analysis — analyzes code without running it, finding bugs via patterns (e.g., gcc -fanalyzer)
+Static analysis. Analyzes code without running it — finds bugs via patterns (e.g., gcc -fanalyzer)
 
 ### Makefile
 `make` script that automates project compilation
 
 ### Nuklear
-C immediate-mode UI library — lightweight, no dependencies
+Immediate mode C UI library — lightweight and dependency-free
 
 ### LVGL
 Light and Versatile Graphics Library — graphics for embedded systems
 
-## Embedded Electronics and DIY Audio
+
+## Embedded electronics and DIY audio
 
 ### ESP32
-Microcontroller with WiFi+Bluetooth, dual-core — the ESPBoy base
+Microcontroller with dual-core WiFi+Bluetooth — ESPBoy base
 
 ### DevKit
-Development board with the microcontroller exposed
+Development board with the exposed microcontroller
 
 ### GPIO
-General Purpose Input/Output — digital pin on a microcontroller
+General Purpose Input/Output — digital pin of the microcontroller
 
 ### Menuconfig
-ESP-IDF configuration system (ESP32 SDK)
+Configuration system of ESP-IDF (ESP32 SDK)
 
 ### ROM
 Game file (Read-Only Memory) — the emulated cartridge image
 
 ### Emulação
-Emulation — reproducing a console's hardware in software on another device
+Emulation. Reproducing the hardware of a console in software on another device
 
 ### TFT
-Thin-Film Transistor — a type of color LCD display
+Thin-Film Transistor — type of color LCD display
 
 ### Backlight
 Lighting behind the LCD display — controls brightness
 
 ### PAM8403
-Class D audio amplifier IC, 3W×2 — used in DIY projects
+3W×2 Class D audio amplifier IC — used in DIY projects
 
 ### TP4056
-Lithium battery charger IC — standard in battery-powered projects
+Lithium battery charger IC — standard in battery projects
 
 ### Divisor de tensão
-Voltage divider — resistor circuit that divides voltage to read multiple buttons on one pin
+Voltage divider. Resistor circuit that divides the voltage to read multiple buttons on one pin
 
 ### Buzzer
 Small piezo speaker — generates tones (not polyphonic)
 
 ### SD Card
-Memory card for storing ROMs and data
+Memory card to store ROMs and data
 
 ### MOSI/MISO/SCLK/CS
-SPI bus pins for displays and SD cards
+Pins of the SPI bus for displays and SD cards
 
-## Email and Infrastructure
+
+## Email and infrastructure
 
 ### Yunohost
 Self-hosted system for managing web apps, email, and DNS on a VPS
@@ -476,13 +486,13 @@ Self-hosted system for managing web apps, email, and DNS on a VPS
 Email server (MTA) for sending and receiving SMTP messages
 
 ### Porta 25
-Port 25 — standard SMTP port for email sending, frequently blocked by ISPs
+Port 25. Standard SMTP port for sending email — often blocked by providers
 
 ### SMTP Relay
-Third-party service (SendGrid, etc) that sends email on your behalf when port 25 is blocked
+Third-party service (SendGrid, etc) that sends email for you when port 25 is blocked
 
 ### SendGrid
-Twilio's SMTP relay service — enables transactional email sending
+Twilio's SMTP relay service — allows sending transactional email
 
 ### iptables
 Linux firewall — controls ports and network traffic
@@ -490,13 +500,14 @@ Linux firewall — controls ports and network traffic
 ### Firewall
 Layer that filters network traffic by port/IP — can block email
 
-## Web and Design
+
+## Web and design
 
 ### Keyframe
-Point in a CSS animation that defines element state at a specific moment
+Point in a CSS animation that defines the state of the elements at an instant
 
 ### @keyframes
-CSS rule that describes the keyframe sequence of an animation
+CSS rule that describes the sequence of keyframes of an animation
 
 ### Prompt
 Terminal indicator (e.g., `$`) — where you type commands
@@ -505,6 +516,10 @@ Terminal indicator (e.g., `$`) — where you type commands
 Animation that simulates typing character by character
 
 ### dmenu
-Dynamic menu from the suckless project for X11 — basis for many tools
+Dynamic menu from the suckless project for X11 — base for several tools
 
 > This glossary is updated as new posts are published. If you think a term is missing, let me know.
+
+---
+
+> This glossary is updated as new posts are published. If you think a term is missing, let me know.\n## Travel and Tourism\n\n### Cavezalle\nLuggage brand.\n\n### Aeroparque\nAeroparque Jorge Newbery (AEP) — airport located inside the city of Buenos Aires.\n\n### San Telmo\nHistoric neighborhood in Buenos Aires, famous for its Sunday antique markets.\n\n### La Boca\nTraditional neighborhood in Buenos Aires, known for the La Bombonera stadium and Caminito.\n\n### La Bombonera\nStadium of Club Atlético Boca Juniors in Buenos Aires.\n\n### Riquelme\nJuan Román Riquelme — idol and current president of Boca Juniors.\n\n### Parque Centenario\nCircular park in the geographical center of Buenos Aires, famous for its book and craft market.\n\n### MEP\nMercado Electrónico de Pagos — exchange rate in Argentina used by international cards (close to the Blue Dollar), essential for tourists.\n\n## Health and Neurodivergence\n\n### TDAH\nAttention Deficit Hyperactivity Disorder (ADHD).\n\n### TAG\nGeneralized Anxiety Disorder (GAD).\n\n### ANC\nActive Noise Cancellation — headphone technology that cancels external noise by emitting inverse sound waves.
