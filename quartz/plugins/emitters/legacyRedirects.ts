@@ -13,25 +13,33 @@ export const LegacyRedirects: QuartzEmitterPlugin = () => ({
   name: "LegacyRedirects",
   async *emit(ctx, content) {
     for (const [_tree, file] of content) {
-      const slug = simplifySlug(file.data.slug!)
+      const slug = file.data.slug!
+      const simpleSlug = simplifySlug(slug)
       // Only redirect pt-BR content (files under /pt/)
-      if (!slug || !slug.startsWith("pt/")) continue
+      if (!simpleSlug || !simpleSlug.startsWith("pt/")) continue
 
-      // Compute the old slug by stripping the /pt prefix
-      const oldSlug = slug.slice(3) as FullSlug // "pt/posts/foo" → "posts/foo"
-      if (!oldSlug || oldSlug === "") continue
+      // Compute the old slug by stripping the /pt prefix from the original slug,
+      // then simplifying. This preserves folder indices: pt/uses/index → uses/
+      const oldSimpleSlug = simplifySlug(slug.slice(3) as FullSlug)
+      if (!oldSimpleSlug || oldSimpleSlug === "/") continue
 
-      const redirUrl = resolveRelative(oldSlug, slug)
+      // For folder redirects, use the FullSlug form (e.g. "uses/index") so write()
+      // emits public/uses/index.html. That makes both /uses and /uses/ resolve.
+      const oldSlug = oldSimpleSlug.endsWith("/")
+        ? ((oldSimpleSlug.slice(0, -1) + "/index") as FullSlug)
+        : (oldSimpleSlug as unknown as FullSlug)
+
+      const targetUrl = resolveRelative(oldSlug, slug)
       yield write({
         ctx,
         content: `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<title>${slug}</title>
-<link rel="canonical" href="${redirUrl}">
+<title>${simpleSlug}</title>
+<link rel="canonical" href="${targetUrl}">
 <meta name="robots" content="noindex">
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=${redirUrl}">
+<meta http-equiv="refresh" content="0; url=${targetUrl}">
 </head>
 </html>`,
         slug: oldSlug,
