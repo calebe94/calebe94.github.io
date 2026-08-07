@@ -48,7 +48,7 @@
     "mdast-util-to-hast": "^13.2.1",
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
-    "minimatch": "^10.1.1",
+    "minimatch": "^10.2.6",
     "pixi.js": "^8.17.1",
     "preact": "^10.29.7",
     "preact-render-to-string": "^6.6.7",
