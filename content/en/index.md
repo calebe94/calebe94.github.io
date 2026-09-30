@@ -29,4 +29,5 @@ Find me also on [LinkedIn](https://www.linkedin.com/in/calebe94/) and [GitHub](h
 - 📝 [Posts](/en/posts/) — Articles and tutorials
 - 📓 [Notes](/en/notes/glossary) — Quick notes and glossary
 - 🛠️ [Uses](/en/uses/) — Tools and technologies I use
+- 🔐 [Security](/en/security) — Scope and rules for vulnerability reports
 - 🔗 [Links](https://links.calebe.dev.br/@calebe94) — My social profiles

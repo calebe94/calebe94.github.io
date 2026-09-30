@@ -3,12 +3,14 @@
 # Sorted alphabetically; one word/term per line
 
 Darkmode
+DMARC
 EMCC
 EMFLAGS
 EMINCLUDE
 EMLIBS
 FOSS
 Gabba
+HSTS
 JFET
 Menuconfig
 Microcontroller
@@ -28,6 +30,7 @@ buzzy
 calebian
 cgit
 cgitrepos
+cookieless
 darkmode
 emcc
 fanalyzer
@@ -66,6 +69,7 @@ suckless
 swillkb
 sxhkd
 sxiv
+tabnabbing
 tensão
 tetris
 tgit
