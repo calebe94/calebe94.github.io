@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // =============================================================================
 // Retro Terminal Theme — ported from Astro Cactus (calebe94.github.io)
@@ -440,4 +441,102 @@ img {
       color: var(--secondary);
     }
   }
+}
+
+// ---------------------------------------------------------------------------
+// Mobile (<= 800px): fix horizontal overflow
+// ---------------------------------------------------------------------------
+// On a phone every page scrolls sideways. Measured on the current base
+// (origin/main with PR #98): 162px of overflow at a 390px viewport, 232px at
+// 320px — on every page, the index included. Three independent causes, all
+// mobile-only:
+//
+//   1. The single-column mobile grid track is `auto`, whose min-content is the
+//      widest child. The header row (hamburger + avatar + title + search +
+//      toggles) and the graph canvas both reach ~526px, so the column refuses
+//      to shrink below that and the whole page overflows.
+//   2. Quartz's graph <canvas> keeps its intrinsic pixel width, forcing the
+//      right sidebar's min-content past the viewport.
+//   3. The header row has no shrinking rules. PR #98 gave .page-title its
+//      ellipsis treatment, but nothing tells the search button to give up
+//      space, so the row still cannot fit.
+//
+// custom.scss is concatenated *after* every component stylesheet
+// (quartz/plugins/emitters/componentResources.ts), so these win without
+// !important.
+@media all and ($mobile) {
+  // 1. let the grid column shrink below its content's min-content
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page > #quartz-body .sidebar.left,
+  .page > #quartz-body .sidebar.right,
+  .page > #quartz-body .sidebar.right > * {
+    min-width: 0;
+  }
+
+  // 2. keep the graph inside its column
+  .graph,
+  .graph > .graph-outer,
+  .graph > .graph-outer > .graph-container {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .graph canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  // 3. compact header that truncates instead of overflowing
+  .page > #quartz-body .sidebar.left .spacer {
+    flex: 0 1 0;
+  }
+
+  .page-title-container {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 0.4rem;
+  }
+
+  // PageTitle.css (PR #98) already sets nowrap + ellipsis + min-width: 0 on
+  // .page-title. What is still needed is a tighter metric than desktop's
+  // 1.75rem / 3px letter-spacing, so the full "Calebe94" fits next to the
+  // hamburger, avatar, search and three toggles — and the nowrap has to be
+  // repeated on the inner <a>, which computes back to `normal` on its own.
+  .page-title,
+  .page-title > a {
+    white-space: nowrap;
+  }
+
+  .page-title {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+  }
+
+  .search {
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+
+  .search > .search-button {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .search > .search-button > p {
+    display: none;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Embeds — a fixed-width iframe must never push the page wider than the screen
+// ---------------------------------------------------------------------------
+// The YouTube Short embed in the MOMO post carries width="333" / height="591"
+// attributes; below ~333px of viewport it dragged the whole article sideways.
+// Embeds that need a ratio should size themselves with `aspect-ratio` inline
+// (see content/*/posts/teclado-momo.md); this is the safety net for the rest.
+iframe {
+  max-width: 100%;
 }

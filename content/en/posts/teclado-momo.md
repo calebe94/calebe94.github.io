@@ -141,7 +141,7 @@ These switches are simply sensational and provide an incredible typing experienc
 Unfortunately, I couldn't record the sound of the keys, but I share a video demonstrating the sound of Akko's **V3 Cream Blue** switches:
 
 <center>
-<iframe width="333" height="591" src="https://www.youtube.com/embed/TVQRDn5qnoQ" title="Akko V3 Cream Blue | $0.19 Tactile King?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/TVQRDn5qnoQ" title="Akko V3 Cream Blue | $0.19 Tactile King?" frameborder="0" style="width:100%;max-width:333px;aspect-ratio:333/591;height:auto;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 
 ## The Journey Continues
