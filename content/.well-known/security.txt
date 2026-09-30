@@ -1,0 +1,9 @@
+# security.txt — RFC 9116
+# Scope, rules and the full out-of-scope list: see the Policy URL below.
+# Renewed manually once a year (Expires must stay under 12 months).
+
+Contact: mailto:contato@calebe.dev.br
+Expires: 2027-09-01T00:00:00.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://blog.calebe.dev.br/.well-known/security.txt
+Policy: https://blog.calebe.dev.br/en/security

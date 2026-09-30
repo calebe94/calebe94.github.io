@@ -1,5 +1,36 @@
+import fs from "fs"
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { QuartzEmitterPlugin } from "./quartz/plugins/types"
+import { write } from "./quartz/plugins/emitters/helpers"
+import { FilePath, FullSlug, joinSegments } from "./quartz/util/path"
+
+/**
+ * Emits `/.well-known/security.txt` (RFC 9116) at the site root.
+ *
+ * Source of truth is `content/.well-known/security.txt`. The Assets emitter cannot
+ * copy it: it globs the content folder with `dot: false`, so dotted directories are
+ * skipped, and Static only maps `quartz/static/**` to `/static/**`.
+ */
+const SecurityTxt: QuartzEmitterPlugin = () => ({
+  name: "SecurityTxt",
+  async emit(ctx) {
+    const src = joinSegments(ctx.argv.directory, ".well-known/security.txt") as FilePath
+    if (!fs.existsSync(src)) {
+      console.warn("SecurityTxt emitter: content/.well-known/security.txt not found, skipping")
+      return []
+    }
+    return [
+      await write({
+        ctx,
+        content: await fs.promises.readFile(src, "utf-8"),
+        slug: ".well-known/security.txt" as FullSlug,
+        ext: "",
+      }),
+    ]
+  },
+  async *partialEmit() {},
+})
 
 /**
  * Quartz 4 Configuration
@@ -86,6 +117,7 @@ const config: QuartzConfig = {
       }),
       Plugin.Assets(),
       Plugin.Static(),
+      SecurityTxt(),
       Plugin.Favicon(),
       Plugin.CNAME(),
       Plugin.LegacyRedirects()

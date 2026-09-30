@@ -28,4 +28,5 @@ Me ache também no [LinkedIn](https://www.linkedin.com/in/calebe94/) e no [GitHu
 - 📝 [Posts](/pt/posts/) — Artigos e tutoriais
 - 📓 [Notes](/pt/notes/) — Notas rápidas
 - 🛠️ [Uses](/pt/uses/) — Ferramentas e tecnologias que uso
+- 🔐 [Segurança](/pt/security) — Escopo e regras para relatos de vulnerabilidade
 - 🔗 [Links](https://links.calebe.dev.br/@calebe94) — Minhas redes sociais

@@ -26,6 +26,7 @@ Universidade
 agentico
 biasar
 comúns
+commitada
 configuracoes
 craftados
 darkmode
@@ -38,6 +39,7 @@ gerber
 gitlab
 historico
 inconsitente
+linkada
 linkar
 linkava
 meuusuario
