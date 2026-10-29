@@ -8,9 +8,14 @@ lang: en
 
 My name is **Edimar Calebe Castanho**, I'm a senior software engineer with 7+ years on the road — I started tinkering with firmware on PIC18F and FreeRTOS, went through IoT data pipelines on the highway, and today I work with cloud and backend in Python.
 
+## ⭐ Featured
+
+- [How I orchestrate autonomous subagents in the terminal](/en/posts/como-orquestro-subagentes-autonomos-no-terminal) — Hermes, a SQLite kanban and LLM fallback running dev tasks unattended.
+- [How I retired R$200/month in cloud LLMs](/en/posts/m5-pro-48gb-hermes-local-llm-pipeline) — a local hybrid pipeline on an M5 Pro 48GB.
+
 I've built a bit of everything: an OBD-II device with GPRS for fleet tracking, BLE trackers for museums, a custom Debian ("T2Ibian") for edge servers along the road, and an aquarium automation system on a Raspberry Pi with a Vue.js dashboard. At **T2I Group** and **Alta Rail Technology**, I mixed C/C++, Python and Flutter — firmware, backend and mobile in the same team.
 
-More recently, I was a **senior cloud and backend engineer at LuizaLabs (Magalu Cloud)**, automating VM lifecycle on OpenStack with FastAPI, and a **senior software engineer at Galileo.ai (acquired by Cisco)**, working with GenAI observability and OpenTelemetry. Today I'm a **senior cloud engineer at Illumina**, leading the migration from vSphere to AWS with ephemeral GitHub Enterprise runners, Terraform and Packer.
+More recently, I was a **senior cloud and backend engineer at LuizaLabs (Magalu Cloud)**, automating VM lifecycle on OpenStack with FastAPI, and a **senior software engineer at Galileo.ai (acquired by Cisco)**, working with GenAI observability and OpenTelemetry. I'm currently a **senior cloud engineer (contract) at Illumina**, leading the migration from vSphere to AWS with ephemeral GitHub Enterprise runners, Terraform and Packer.
 
 My current stack: **Python** (FastAPI, Flask, Django, asyncio), **TypeScript/Node.js**, **AWS and OpenStack** with Terraform and Ansible, and **CI/CD** on GitHub Actions and GitLab CI. I've always liked low-level stuff — C/C++, Linux, embedded systems — and DevOps practices: automation, continuous integration, and doing more with less.
 

@@ -57,6 +57,39 @@ Native service and daemon manager for macOS (equivalent to systemd on Linux)
 Property List — XML or binary file format used by macOS for service and app configurations
 
 
+## Observability and multi-tenant systems
+
+### OpenTelemetry
+Open source, vendor-neutral standard and SDKs for producing traces, metrics and logs from applications
+
+### Trace
+The full record of one request as it moves through a system, made of [spans](#Span) that share a trace ID
+
+### Span
+One timed operation inside a [trace](#Trace) (for example a tool call or a model call), with a parent, attributes and a duration
+
+### OTLP
+OpenTelemetry Protocol — the wire format (gRPC or HTTP) used to send telemetry from an application to a collector or backend
+
+### Baggage
+Key/value pairs that travel with the request context (and across services) so every component can read them, for example the tenant ID
+
+### Semantic conventions
+OpenTelemetry's agreed attribute names and meanings (for example `gen_ai.usage.input_tokens`), so different tools read the same data the same way
+
+### Collector
+OpenTelemetry Collector — a process that receives telemetry, batches or filters it, and forwards it to one or more backends
+
+### Sampling
+Keeping only a fraction of traces to limit cost, decided at the start of a request (head) or after it finishes (tail)
+
+### Multi-tenancy
+One deployment serving many customers (tenants) whose data and usage must stay separated
+
+### Row-Level Security
+PostgreSQL feature (RLS) where a policy on a table decides which rows each query may see or change, enforced by the database itself
+
+
 ## Guitar and audio
 
 ### Plexi

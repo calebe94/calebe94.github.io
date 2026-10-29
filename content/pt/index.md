@@ -7,9 +7,14 @@ description: Blog do Calebe94 — engenheiro de software sênior, cloud, backend
 
 Meu nome é **Edimar Calebe Castanho**, sou engenheiro de software sênior com 7+ anos de estrada — comecei mexendo com firmware em PIC18F e FreeRTOS, passei por pipelines de dados IoT na estrada, e hoje trabalho com cloud e backend em Python.
 
+## ⭐ Destaques
+
+- [Como orquestro subagentes autônomos no terminal](/pt/posts/como-orquestro-subagentes-autonomos-no-terminal) — Hermes, kanban em SQLite e fallback de LLMs executando tarefas de dev sem intervenção.
+- [Como aposentei R$200/mês de LLM Cloud](/pt/posts/m5-pro-48gb-hermes-local-llm-pipeline) — pipeline híbrido local em um M5 Pro 48GB.
+
 Já construí de tudo um pouco: dispositivo OBD-II com GPRS para rastreamento de frotas, trackers BLE para museus, um Debian customizado ("T2Ibian") para servidores de beira de estrada, e um sistema de automação de aquário no Raspberry Pi com dashboard em Vue.js. Na **T2I Group** e na **Alta Rail Technology**, misturei C/C++, Python e Flutter — firmware, backend e mobile no mesmo time.
 
-Mais recentemente, fui **engenheiro sênior de cloud e backend na LuizaLabs (Magalu Cloud)**, automatizando o ciclo de vida de VMs em OpenStack com FastAPI, e **engenheiro de software sênior na Galileo.ai (adquirida pela Cisco)**, trabalhando com observabilidade GenAI e OpenTelemetry. Hoje sou **engenheiro de cloud sênior na Illumina**, liderando a migração de vSphere para AWS com runners efêmeros do GitHub Enterprise, Terraform e Packer.
+Mais recentemente, fui **engenheiro sênior de cloud e backend na LuizaLabs (Magalu Cloud)**, automatizando o ciclo de vida de VMs em OpenStack com FastAPI, e **engenheiro de software sênior na Galileo.ai (adquirida pela Cisco)**, trabalhando com observabilidade GenAI e OpenTelemetry. Atualmente sou **engenheiro de cloud sênior (contrato) na Illumina**, liderando a migração de vSphere para AWS com runners efêmeros do GitHub Enterprise, Terraform e Packer.
 
 Minha stack atual: **Python** (FastAPI, Flask, Django, asyncio), **TypeScript/Node.js**, **AWS e OpenStack** com Terraform e Ansible, e **CI/CD** no GitHub Actions e GitLab CI. Sempre gostei de baixo nível — C/C++, Linux, sistemas embarcados — e de práticas DevOps: automação, integração contínua e fazer mais com menos.
 

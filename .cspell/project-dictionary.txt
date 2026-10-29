@@ -152,3 +152,9 @@ Neurodivergência
 Newbery
 Román
 TDAH
+BYPASSRLS
+NOBYPASSRLS
+NOSUPERUSER
+genai
+opentelemetry
+postgres
